@@ -1,0 +1,9 @@
+mixin inputText(name, type, placeholder,label)
+	div.form-group
+		label.label(for='name') #{label}
+			input#name.input(name=name,type=type, placeholder=placeholder)
+			
+mixin inputTextAray(name, type, placeholder,label)
+	div.form-group
+		label.label(for='textarea') #{label}
+		textarea#textarea.textarea(name=name,type=type, placeholder=placeholder)
