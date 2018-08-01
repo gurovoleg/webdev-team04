@@ -1,5 +1,7 @@
 extends ../../layouts/ui-layout.pug
 
+include ../../mixins/_avatars.pug
+
 block variables
 	- var title = 'Аватарки - UI-kit и HTML фреймворк - Документация';
 	- var pageClass = 'body--dashboard';
@@ -9,6 +11,8 @@ block content
 
 	.main-wrapper
 		.container.container--left
-			.title.mb-0 Аватарки
+			.title.mb-50 Аватарки
+			.subtitle.mb-30 Аватар большой
 			+avatar('avatar','photo-big.jpg')
+			.subtitle.mb-30.mt-50 Аватар малый
 			+avatar('avatar--small','photo-big.jpg')
