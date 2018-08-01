@@ -1,6 +1,4 @@
 extends ../../layouts/ui-layout.pug
-
-
 block variables
 	- var title = 'Комментарии - UI-kit и HTML фреймворк - Документация';
 	- var pageClass = 'body--dashboard';
@@ -13,6 +11,7 @@ block content
 			.title.mb-0 Комментарии
 			.comments
 				p.comments-count 2 комментария
+				
 				.comments__block
 					+comments-block__item('avatars/avatar-2.jpg', 'аватaр', 'Джон До', '05 Мая 2017 года в 15:45', 'Замечательный парк, обязательно отправлюсь туда этим летом.')
 
