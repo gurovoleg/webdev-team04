@@ -1,0 +1,14 @@
+mixin inputText(name, type, placeholder,label)
+	div.form-group
+		label.label #{label}
+			input.input(name=name,type=type, placeholder=placeholder)
+			
+mixin inputTextArea(name, type, placeholder,label)
+	div.form-group
+		label.label #{label}
+		textarea.textarea(name=name,type=type, placeholder=placeholder)
+		
+mixin inputTextActive(name, type, placeholder,label)
+	div.form-group
+		label.label #{label}
+			input.input(name=name,type=type, placeholder=placeholder, autofocus)

@@ -1,19 +1,58 @@
 .form {
 	
 }
-
+.form-group{
+	line-height: 24px;
+	font-size:16px;
+	margin-top: 30px;
+	width: 85%;
+    margin-bottom: 30px;
+	
+}
+.label {
+  font-weight: 700; 
+}
 .input {
-
-}
-
+	height: 42px;
+	width: 100%;
+	display: block;
+	margin-top:10px;
+	padding:15px 10px 15px 10px;	
+	border: 1px solid @border-color;
+	border-radius: @form-border-radius;
+	outline: none;
+	transition: @transition-form;
+		&:active, &:hover, &:focus {
+			border: 1px solid @border-color-active;
+			box-shadow: @form-box-shadow;
+	        }		
+		}
+.active-input{
+	border: 1px solid @border-color-active;
+ 	box-shadow: @form-box-shadow;
+             }
 .textarea {
-
-}
+	display: block;	
+	margin-top:10px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 24px;
+	border-radius: @form-border-radius;
+ 	border: 1px solid @border-color;
+ 	padding: 10px 15px 30px 15px;
+	display: block;
+	min-height: 110px;
+	outline: none;
+	transition:@transition-form;
+ 	
+	  &:active, &:hover, &:focus{
+			border: 1px solid @border-color-active;
+			box-shadow: @form-box-shadow;
+		    
+				}	
+		   }
 
 .fieldset {
 
 } 
 
-.label {
-
-}
