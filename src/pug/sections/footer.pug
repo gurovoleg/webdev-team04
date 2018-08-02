@@ -9,24 +9,31 @@ footer
 			{name: 'Контакты', link: 'index.html'}
 			]
 
-	.footer.footer-nav
+	.footer
 		.footer-nav__item.copyright
-			p.
-				© Юрий Ключевский
-				Создано с  в WebCademy.ru в 2018 году
-		nav.footer-nav__item
+			p
+				| © Юрий Ключевский <br>
+				| Создано с 
+				i.fas.fa-heart
+				|  в 
+				a(href='http://webcademy.ru' target='_blank')
+					span.
+						WebCademy.ru 
+				| в 2018 году
+		nav.footer-nav.footer-nav__item
 			ul
 				each item in navigation
 					li
-						a(href= item.link)= item.name		
+						a(href= item.link)= item.name
+
 		.footer-nav__item.footer__icons
 			a(href='#' target='_blank')
-				i(class='fas fa-vk')
+				i(class='fab fa-vk')
 			a(href='#' target='_blank')
-				i(class='fas fa-twitter')
+				i(class='fab fa-twitter')
 			a(href='#' target='_blank')
-				i(class='fas fa-youtube')
+				i(class='fab fa-youtube')
 			a(href='#' target='_blank')
-				i(class='fas fa-instagram')
+				i(class='fab fa-instagram')
 			a(href='#' target='_blank')
-				i(class='fas fa-facebook')
+				i(class='fab fa-facebook-f')
