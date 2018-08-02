@@ -14,14 +14,34 @@ block content
 				p
 					b.
 						Чекбоксы
-				+checkbox('mark', 'Запомни меня')
+				+checkbox('checkbox','mark', 'Запомни меня')
 				p.
 					Чекбокс в неактивном состоянии.  
 				pre.
-					+checkbox('mark', 'Запомни меня')
+					+checkbox('checkbox','mark', 'Запомни меня')
 			.section-ui
-				+checkbox('mark', 'Запомни меня','checked')
+				+checkbox('checkbox','mark', 'Запомни меня','checked')
 				p.
 					Миксин, который отвечает за  автоматическое включение "галочки" у чекбокса. Так же, это пример чекбокса в активном состояние.  
 				pre.
 					+checkbox('checkbox','mark', 'Запомни меня','checked')
+
+
+				+inputText('firstname','text', 'Введите имя','Поле для ввода')
+				pre.
+					+inputText('firstname','text', 'Введите имя','Поле для ввода')
+			.section-ui
+				p.
+					Форма в активном состояние
+				+inputTextActive('firstname','text', 'Введите имя','Поле для ввода')
+				pre.
+					+inputTextActive('firstname','text', 'Введите имя','Поле для ввода')
+			.section-ui
+				p
+					em.
+						Форма для текстового сообщения 
+				+inputTextArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
+				pre.
+					+inputTextArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
+					
+
