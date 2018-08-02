@@ -9,9 +9,11 @@ block content
 
 	.main-wrapper
 		.container.container--left
+
 			.title Уведомления
-			
+
 			h3.mb-10 Успех
+
 			.notify.notify--success Запись создана успешно!
 
 			pre.
@@ -46,3 +48,53 @@ block content
 							| Или воспользуйтесь 
 							a(href="#!") восстановлением пароля 
 							|, чтобы войти на сайт.
+			
+
+			.title Миксины для уведомлений
+
+			+notification('Тестовая нотификация', 'success')
+			+notification('Тестовая нотификация', 'update')
+			+notification('Тестовая нотификация', 'error')
+
+			pre.
+				+notification('Тестовая нотификация', 'success')
+				+notification('Тестовая нотификация', 'update')
+				+notification('Тестовая нотификация', 'error')
+
+			+notificationDesc('Тестовая нотификация', 'error')
+				p Используйте другой email чтобы создать новый аккаунт.
+				p 
+					| Или воспользуйтесь 
+					a(href="#!") восстановлением пароля 
+					|, чтобы войти на сайт. 
+				+button('hello', 'link')
+
+			pre.
+				+notificationDesc('Тестовая нотификация', 'error')
+					p Используйте другой email чтобы создать новый аккаунт.
+					p 
+						| Или воспользуйтесь 
+						a(href="#!") восстановлением пароля 
+						|, чтобы войти на сайт. 
+					+button('hello', 'link')
+
+			+notificationUniversal('Универсальный 1', 'error')
+
+			+notificationUniversal('Универсальный 2', 'update')
+				p Используйте другой email чтобы создать новый аккаунт.
+				p 
+					| Или воспользуйтесь 
+					a(href="#!") восстановлением пароля 
+					|, чтобы войти на сайт. 
+				+button('hello', 'link')
+
+			pre.
+				+notificationUniversal('Универсальный 1', 'error')
+
+				+notificationUniversal('Универсальный 2', 'update')
+					p Используйте другой email чтобы создать новый аккаунт.
+					p 
+						| Или воспользуйтесь 
+						a(href="#!") восстановлением пароля 
+						|, чтобы войти на сайт. 
+					+button('hello', 'link')
