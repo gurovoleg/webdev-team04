@@ -1,13 +1,13 @@
-mixin checkbox(type, name, text, status)
+mixin checkbox( name, text, status)
 		if status === 'checked'
 			.form-checkbox
 				label.label-checkbox
-					input.checkbox(type=type, name = name,checked)
+					input.checkbox(type=checkbox, name = name,checked)
 					span.checkmark
 					| #{text}
 		else
 			.form-checkbox
 				label.label-checkbox
-					input.checkbox(type=type, name = name)
+					input.checkbox(type=checbox, name = name)
 					span.checkmark
 					| #{text}
