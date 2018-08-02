@@ -17,3 +17,53 @@
 .label {
 
 }
+.form-checkbox{		
+	 display: inline-block;
+	 width:165px;
+	 margin-right: 55px; 
+   			}
+.label-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+	cursor: pointer;
+		input {
+			position: absolute;
+			opacity: 0;
+			
+				&:checked ~ .checkmark:after {
+				display: block;
+					}
+ 				}	
+				}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color:@bg-color-checkbox;
+	border-radius: @form-border-radius;
+			}
+
+ .container .checkmark:after {
+    left: 5px;
+    top: 3px;
+	content: '\2714';
+	color:@white;
+	font-size: 13px;
+	font-weight: 700;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+
+
+

@@ -11,4 +11,17 @@ block content
 		.container.container--left
 			.section-ui
 				.title Элементы формы
-
+				p
+					b.
+						Чекбоксы
+				+checkbox('checkbox','mark', 'Запомни меня')
+				p.
+					Чекбокс в неактивном состоянии.  
+				pre.
+					+checkbox('checkbox','mark', 'Запомни меня')
+			.section-ui
+				+checkbox('checkbox','mark', 'Запомни меня','checked')
+				p.
+					Миксин, который отвечает за  автоматическое включение "галочки" у чекбокса. Так же, это пример чекбокса в активном состояние.  
+				pre.
+					+checkbox('checkbox','mark', 'Запомни меня','checked')
