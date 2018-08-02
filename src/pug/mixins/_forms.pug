@@ -2,12 +2,12 @@ mixin checkbox(type, name, text, status)
 		if status === 'checked'
 			.form-checkbox
 				label.label-checkbox
-					input.checkbox(type = type, name = name,checked)
+					input.checkbox(type=type, name = name,checked)
 					span.checkmark
 					| #{text}
 		else
 			.form-checkbox
 				label.label-checkbox
-					input.checkbox(type = type, name = name)
+					input.checkbox(type=type, name = name)
 					span.checkmark
 					| #{text}
