@@ -3,7 +3,7 @@ mixin inputText(name, type, placeholder,label)
 		label.label #{label}
 			input.input(name=name,type=type, placeholder=placeholder)
 			
-mixin inputTextAray(name, type, placeholder,label)
+mixin inputTextArea(name, type, placeholder,label)
 	div.form-group
 		label.label #{label}
 		textarea.textarea(name=name,type=type, placeholder=placeholder)
@@ -11,4 +11,4 @@ mixin inputTextAray(name, type, placeholder,label)
 mixin inputTextActive(name, type, placeholder,label)
 	div.form-group
 		label.label #{label}
-			input.input.active-input(name=name,type=type, placeholder=placeholder)
+			input.input(name=name,type=type, placeholder=placeholder, autofocus)
