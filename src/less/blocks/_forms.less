@@ -5,7 +5,7 @@
 	line-height: 24px;
 	font-size:16px;
 	margin-top: 30px;
-	width: 940px;
+	width: 85%;
     margin-bottom: 30px;
 	
 }
@@ -19,14 +19,19 @@
 	width: 100%;
 	display: block;
 	margin-top:10px;
-	padding-left: 15px;	
+	padding:15px 10px 15px 10px;	
 	border: 1px solid @border-color;
 	border-radius: @form-border-radius;
 	
-		&:active, &:hover, &:focus {
+		&:active, &:hover{
 			border: 1px solid @border-color-active;
 			box-shadow: @form-box-shadow;
 	}
+		
+}
+.active-input{
+	border: 1px solid @border-color-active;
+ 	box-shadow: @form-box-shadow;
 }
 
 .textarea {
@@ -41,12 +46,18 @@
 	display: block;
 	min-height: 110px;
  	
- 	&:active, &:hover, &:focus {
+ 	 &:focus, &:active {
  		border: 1px solid @border-color-active;
  		box-shadow: @form-box-shadow;
+		outline: none;
  	}
 }
 
+.active-input{
+	border: 1px solid @border-color-active;
+ 	box-shadow: @form-box-shadow;
+	outline: none
+}
 
 .fieldset {
 
