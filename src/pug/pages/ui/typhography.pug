@@ -12,8 +12,16 @@ block content
 			.section-ui
 				.title Типографика
 				p Вся типографика и стилизация по тегам работает внутри класса <code>.user-content</code> 
+				p Цвета, записанные в переменные
+				div(style="display:inline-block;width:30px; height:30px;background-color:#222222") 
+				div(style="display:inline-block;width:30px; height:30px;background-color:#383737")
+				div(style="display:inline-block;width:30px; height:30px;background-color:#037ec6")
 				br
 				br
+				pre.
+					@title: #222222;
+					@text: #383737;
+					@active: #037ec6; 
 				br
 				p Заголовки
 				.section-ui
