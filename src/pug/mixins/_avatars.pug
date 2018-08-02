@@ -1,4 +1,7 @@
-mixin avatar(imgClass, imgName)
-	img(class=""+ imgClass src="../img/avatars/"+ imgName alt="avatar")
+mixin avatar(imgSrc)
+	.avatar
+		img(src="../img/avatars/"+ imgSrc alt="avatar")
 
-
+mixin avatar-small(imgSrc)
+	.avatar--small
+		img(src="../img/avatars/"+ imgSrc alt="avatar")
