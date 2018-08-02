@@ -9,7 +9,14 @@ block content
 
 	.main-wrapper
 		.container.container--left
-			.title.mb-15 Бейджи
+			.title.mb-45 Бейджи
+			.title-medium.mb-15 бейдж обычный
 			+badge('Пользователь')
 			pre.
 				+badge('Пользователь')
+
+			.title-medium.mb-15.mt-45 бейдж, как  ссылка
+
+			+badgeLink("#", "Пользователь")
+			pre.
+				+badgeLink("#", "Пользователь")
