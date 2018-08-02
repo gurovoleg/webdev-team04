@@ -1,1 +1,11 @@
 // Разные миксины по одному, которые понадобятся. Для логотипа, бейджа, и т.д.
+//-миксин для комментариев
+mixin comments-block__item(imgSrc, imgAlt, name, data, text)
+	.comments-block__item.pl-20.mb-10
+		.user-photo
+			img.photo-circle(src="../img/"+ imgSrc, alt= 'avatar')
+		.comments-block-item__content.pl-20
+			.comments-block-item__info.pb-10
+				.user-name.mr-45= name
+				.comment-write-date= data
+			.comments-block-item__text= text
