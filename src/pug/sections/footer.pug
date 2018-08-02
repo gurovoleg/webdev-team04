@@ -1,1 +1,32 @@
 // Секция под футер для сайта
+footer
+	- 
+		var navigation = [
+			{name: 'Главная', link: 'index.html'},
+			{name: 'Обо мне', link: 'index.html'},
+			{name: 'Работы', link: 'index.html'},
+			{name: 'Блог', link: 'index.html'},
+			{name: 'Контакты', link: 'index.html'}
+			]
+
+	.footer.footer-nav
+		.footer-nav__item.copyright
+			p.
+				© Юрий Ключевский
+				Создано с  в WebCademy.ru в 2018 году
+		nav.footer-nav__item
+			ul
+				each item in navigation
+					li
+						a(href= item.link)= item.name		
+		.footer-nav__item.footer__icons
+			a(href='#' target='_blank')
+				i(class='fas fa-vk')
+			a(href='#' target='_blank')
+				i(class='fas fa-twitter')
+			a(href='#' target='_blank')
+				i(class='fas fa-youtube')
+			a(href='#' target='_blank')
+				i(class='fas fa-instagram')
+			a(href='#' target='_blank')
+				i(class='fas fa-facebook')
