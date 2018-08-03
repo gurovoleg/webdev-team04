@@ -11,4 +11,20 @@ block content
 		.container.container--left
 			.section-ui
 				.title Элементы формы
-
+				+inputText('firstname','text', 'Введите имя','Поле для ввода')
+				pre.
+					+inputText('firstname','text', 'Введите имя','Поле для ввода')
+			.section-ui
+				p.
+					Форма в активном состояние
+				+inputTextActive('firstname','text', 'Введите имя','Поле для ввода')
+				pre.
+					+inputTextActive('firstname','text', 'Введите имя','Поле для ввода')
+			.section-ui
+				p
+					em.
+						Форма для текстового сообщения 
+				+inputTextArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
+				pre.
+					+inputTextArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
+					
