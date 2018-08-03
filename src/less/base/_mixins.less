@@ -13,3 +13,14 @@
 	     -o-transition: box-shadow 0.2s ease-in;
 	        transition: box-shadow 0.2s ease-in;
 }
+
+
+.displayFlex(@dir, @justContent, @alignItems){
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: @dir;
+	align-items:  @alignItems;
+}
