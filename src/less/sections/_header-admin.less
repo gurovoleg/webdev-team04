@@ -1,21 +1,61 @@
+.admin-panel{
+	width: 100%;
+	height: 100vh;
+	background-color: @bg-color-checkbox;
+}
+
 .header-admin {
-	
+	position: relative;
+	width: 100%;
+	background-color: @white;	
+	padding-right: 45px;
+	display: flex;
+	align-items: center;
+}
+.user-info {
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	display: flex;
+	align-items: center;
+	& p {
+		margin: 0;
+		padding: 0;
+		color: @title;
+	}
 }
 
-.admin-nav {
-
-}
-
-.admin-nav__link {
+ul.admin-nav{
+	width: 80%;
+	margin: 0;
+	padding: 0;
 	
+	margin-left: auto;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+a.admin-nav__link {
+	padding:10px;
+	text-decoration: none;
+	color: @text;
+	transition: color, 1s;
 	&:hover {
-		
+		text-decoration: none;
+		color: @active;
 	}
+}
 
-	&:last-child {
-		
-	}
-	
+li.admin-nav-item{
+	line-height: 22px;	
+	margin-right: 13px;
+}
+
+li.admin-nav-item:last-child{
+	margin-right: 5px;
+	text-align: right;
+	flex-grow: 1;
 }
 
 .link__icon {
