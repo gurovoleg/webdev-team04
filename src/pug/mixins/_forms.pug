@@ -1,30 +1,23 @@
-
-mixin checkbox(type, name, text, status)
+mixin checkbox(name, text, status)
 		if status === 'checked'
 			.form-checkbox
 				label.label-checkbox
-					input.checkbox(type=type, name = name, checked)
+					input.checkbox(type='checkbox', name = name, checked)
 					span.checkmark
 					| #{text}
 		else
 			.form-checkbox
 				label.label-checkbox
-					input.checkbox(type=type, name = name)
+					input.checkbox(type='checkbox', name = name)
 					span.checkmark
 					| #{text}
 
-
-mixin inputText(name, type, placeholder,label)
+mixin input(name, type, placeholder,label)
 	div.form-group
 		label.label #{label}
 			input.input(name=name,type=type, placeholder=placeholder)
 			
-mixin inputTextArea(name, type, placeholder,label)
+mixin textArea(name, type, placeholder,label)
 	div.form-group
 		label.label #{label}
 		textarea.textarea(name=name,type=type, placeholder=placeholder)
-		
-mixin inputTextActive(name, type, placeholder,label)
-	div.form-group
-		label.label #{label}
-			input.input(name=name,type=type, placeholder=placeholder, autofocus)
