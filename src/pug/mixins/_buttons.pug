@@ -1,9 +1,14 @@
 mixin button(text, link)
 	a(class="button" href=link) #{text}
 
-mixin button-arrow(text, link)
-	a(class="button" href=link) #{text}
-		i.fas.fa-arrow-right
+mixin button-icon-right(text, link, icon)
+	a(class="button button--icon-right" href=link) #{text}
+		i(class= icon)
+
+mixin button-icon-left(text, link, icon)
+	a(class="button button--icon-left" href=link) 
+		i(class= icon)
+		| #{text}
 
 mixin button-edit(text, link)
 	a(class="button button--edit" href=link) #{text}

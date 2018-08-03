@@ -1,8 +1,8 @@
 extends ../../layouts/ui-layout.pug
 
 block variables
-	- var title = 'Кнопки - UI-kit и HTML фреймворк - Документация'
-	- var pageClass = 'body--dashboard'
+	- var title = 'Кнопки - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
 
 block content
 	include ../../sections/ui-nav-inside-ui.pug
@@ -11,60 +11,41 @@ block content
 		.container.container--left
 			.title Кнопки
 
+			h2 Кнопки с иконками
 			.section-ui
-				+button-arrow('Вперёд ', '#')
+				+button-icon-right('Вперёд', '#', 'fas fa-arrow-right')
+				+button-icon-left('Назад', '#', 'fas fa-arrow-left')
 			pre.
-				+button-arrow('Вперёд ', '#')
-
+				+button-icon-right('Вперёд', '#', 'fas fa-arrow-right')
+				+button-icon-left('Назад', '#', 'fas fa-arrow-left')
+			
+			h2 Большие кнопки
 			.section-ui
 				+button('Подробнее', '#')
+				+button-edit('Редактировать', '#')
+				+button-remove('Удалить', '#')
+				+button-save('Сохранить', '#')
+				+button-enter('Войти', '#')
 			pre.
 				+button('Подробнее', '#')
-
-			.section-ui
 				+button-edit('Редактировать', '#')
-			pre.
-				+button-edit('Редактировать', '#')
-
-			.section-ui
 				+button-remove('Удалить', '#')
-			pre.
-				+button-remove('Удалить', '#')
-
-			.section-ui
 				+button-save('Сохранить', '#')
-			pre.
-				+button-save('Сохранить', '#')
+				+button-enter('Войти', '#')
 
-			.section-ui
-				+button-enter('Войти', '#')
-			pre.
-				+button-enter('Войти', '#')
+			h2 Кнопки малого размера.
 
 			.section-ui
 				+button-profile('Профиль', '#')
+				+button-small('Подробнее', '#')
+				+button-editsmall('Редактировать', '#')
+				+button-savesmall('Сохранить', '#')
+				+button-removesmall('Удалить', '#')
 			pre.
 				+button-profile('Профиль', '#')
-
-			h1.
-				Кнопки малого размера.
-
-			.section-ui
 				+button-small('Подробнее', '#')
-			pre.
-				+button-small('Подробнее', '#')
-
-			.section-ui
 				+button-editsmall('Редактировать', '#')
-			pre.
-				+button-editsmall('Редактировать', '#')
-
-			.section-ui
 				+button-savesmall('Сохранить', '#')
-			pre.
-				+button-savesmall('Сохранить', '#')
+				+button-removesmall('Удалить', '#')
 
-			.section-ui
-				+button-removesmall('Удалить', '#')
-			pre.
-				+button-removesmall('Удалить', '#')
+
