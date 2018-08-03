@@ -15,21 +15,21 @@ block content
 			.user-content
 				br
 
-				.card-post
+				.post
 					h1 Национальный парк Йосемити
 
-					.card-info
-						.card-info__author Емельян Казаков
-						.card-info__topic 
-							+cardLink('Путешествия', '#') 
-						.card-info__date 16 Марта 2017
-						.card-info__comments
-							+cardLink('2 комментария', '#') 
+					.post-info
+						.post-info__author Емельян Казаков
+						.post-info__topic 
+							+postLink('Путешествия', '#') 
+						.post-info__date 16 Марта 2017
+						.post-info__comments
+							+postLink('2 комментария', '#') 
 							
-					.card-img
+					.post-img
 						+blogImg('yosemity.jpg', 'Горы')
 					
-					.card-text
+					.post-text
 						p
 							| Парк находится в горах 
 							+link('Сьерра-Невада', '#')
