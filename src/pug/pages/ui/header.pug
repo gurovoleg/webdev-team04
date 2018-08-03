@@ -25,10 +25,10 @@ block content
 							+linkNav('Работы', '#')
 							+linkNav('Блог', '#').header__nav-active
 							+linkNav('Контакты', '#')
-			.title Шапка общая
-				p Шапка-Администратора  
-			header.header.header-guest
-				.header_container
+			
+			p Шапка-Администратора  
+			header.header.header-admin
+				.header_admin-container
 					.header_top
 						+logo('Digital Lifestyle','Сайт IT специалиста')
 					nav.header_nav
@@ -38,8 +38,29 @@ block content
 							+linkNav('Работы', '#')
 							+linkNav('Блог', '#')
 							+linkNav('Контакты','#')
-
-
+							
+			p Шапка-Пользователь 
+			header.header-user.header
+				.header_container.header-container-user
+					.header_top
+						+logo('Digital Lifestyle','Сайт IT специалиста')
+						div.header_right-col
+							div.header-avatar
+								+avatar-small('photo-big.jpg')
+							div.header-user
+								p.header-user-name
+									|	Юрий Ключевский
+								span пользователь
+								div.header-user-but
+									+button-profile('Профиль', '#')
+									+button-profile('Выход', '#')
+					nav.header_nav
+						ul
+							+linkNav('Главная', '#')
+							+linkNav('Обо мне', '#')
+							+linkNav('Работы', '#')
+							+linkNav('Блог', '#').header__nav-active
+							+linkNav('Контакты', '#')
 					
 					//	include ../../sections/header.pug
 
