@@ -7,3 +7,7 @@ mixin linkLeftPanel(text, link)
 mixin linkList(text, link)
 	li
 		a(target!=attributes.target, class!=attributes.class href=link ) #{text}
+
+mixin linkNav(text, link)
+	li.header__nav-item
+		a.header__nav-link(target!=attributes.target, class!=attributes.class href=link ) #{text}

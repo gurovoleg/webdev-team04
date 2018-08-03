@@ -1,1 +1,15 @@
-// Секция под шапку на сайт
+// Секция под шапку на сайт 
+header.header.header-guest
+				.header_container
+					.header_top
+						+logo('Digital Lifestyle','Сайт IT специалиста')
+						div.header_registration
+							+link('Регистрация', '#').header_registration-link
+							+link('Вход', '#').header_registration-link
+					nav.header_nav
+						ul
+							+linkNav('Главная', '#')
+							+linkNav('Обо мне', '#')
+							+linkNav('Работы', '#')
+							+linkNav('Блог', '#').header__nav-active
+							+linkNav('Контакты', '#')

@@ -1,1 +1,8 @@
 // Разные миксины по одному, которые понадобятся. Для логотипа, бейджа, и т.д.
+mixin logo(title, subtitle)
+	.logo
+		.logo_icon
+			i(class = "far fa-paper-plane")
+		.logo_description
+			a(href="#").header-logo_title #{title}
+			.header-logo_sub #{subtitle}
