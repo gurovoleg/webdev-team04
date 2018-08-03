@@ -1,8 +1,8 @@
 extends ../../layouts/ui-layout.pug
 
 block variables
-	- var title = 'Формы - UI-kit и HTML фреймворк - Документация'
-	- var pageClass = 'body--dashboard'
+	- var title = 'Формы - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
 
 block content
 	include ../../sections/ui-nav-inside-ui.pug
@@ -11,20 +11,33 @@ block content
 		.container.container--left
 			.section-ui
 				.title Элементы формы
-				+inputText('firstname','text', 'Введите имя','Поле для ввода')
-				pre.
-					+inputText('firstname','text', 'Введите имя','Поле для ввода')
-			.section-ui
+				p
+					b.
+						Чекбоксы
+				+checkbox('mark', 'Запомни меня')
 				p.
-					Форма в активном состояние
-				+inputTextActive('firstname','text', 'Введите имя','Поле для ввода')
+					Чекбокс в неактивном состоянии.  
 				pre.
-					+inputTextActive('firstname','text', 'Введите имя','Поле для ввода')
+					+checkbox('mark', 'Запомни меня')
+			.section-ui
+				+checkbox('mark', 'Запомни меня','checked')
+				p.
+					Миксин, который отвечает за  автоматическое включение "галочки" у чекбокса. Так же, это пример чекбокса в активном состояние.  
+				pre.
+					+checkbox('mark', 'Запомни меня','checked')
+
+
+			.section-ui
+				+input('firstname','text', 'Введите имя','Поле для ввода')
+				pre.
+					+input('firstname','text', 'Введите имя','Поле для ввода')
+			
 			.section-ui
 				p
 					em.
 						Форма для текстового сообщения 
-				+inputTextArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
+				+textArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
 				pre.
-					+inputTextArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
+					+textArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
 					
+
