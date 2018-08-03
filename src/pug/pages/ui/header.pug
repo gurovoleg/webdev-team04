@@ -10,11 +10,38 @@ block content
 	.main-wrapper
 		.container.container--left
 			.title Шапка общая
-			
-						
+				p Шапка-гость 
+			header.header.header-guest
+				.header_container
+					.header_top
+						+logo('Digital Lifestyle','Сайт IT специалиста')
+						div.header_registration
+							+link('Регистрация', '#').header_registration-link
+							+link('Вход', '#').header_registration-link
+					nav.header_nav
+						ul
+							+linkNav('Главная', '#')
+							+linkNav('Обо мне', '#')
+							+linkNav('Работы', '#')
+							+linkNav('Блог', '#').header__nav-active
+							+linkNav('Контакты', '#')
+			.title Шапка общая
+				p Шапка-Администратора  
+			header.header.header-guest
+				.header_container
+					.header_top
+						+logo('Digital Lifestyle','Сайт IT специалиста')
+					nav.header_nav
+						ul
+							+linkNav('Главная', '#')
+							+linkNav('Обо мне', '#')
+							+linkNav('Работы', '#')
+							+linkNav('Блог', '#')
+							+linkNav('Контакты','#')
+
+
 					
-					
-						include ../../sections/header.pug
+					//	include ../../sections/header.pug
 
 		.section-ui.mt-20
 			.title-medium Подключение из файла
