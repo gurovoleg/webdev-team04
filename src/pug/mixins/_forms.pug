@@ -21,3 +21,9 @@ mixin textArea(name, type, placeholder,label)
 	div.form-group
 		label.label #{label}
 		textarea.textarea(name=name,type=type, placeholder=placeholder)
+
+mixin formInput(id, method, action, textButton, labelText)
+	form.file-upload(id=id, method=method, action=action)
+		input.file__upload-input(type="file")
+		button.file__upload-button #{textButton}
+		label.file__upload-text #{labelText}
