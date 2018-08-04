@@ -1,6 +1,15 @@
-mixin card()
+mixin card-post(imgSrc, text)
 	.card
-		if block
-			block
-		else
-			p No content provided
+		.card--post
+			.card-img
+				img(src="../img/svg-for-sprites/"+imgSrc alt="picture")
+			.card-text #{text}
+			+button('Читать' '#')
+
+mixin card-portfolio(imgSrc, text)
+	.card
+		.card--portfolio
+			.card-img
+				img(src="../img/svg-for-sprites/"+imgSrc alt="picture")
+			.card-text #{text}
+			+button('Смотреть кейс' '#')

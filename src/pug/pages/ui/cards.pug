@@ -1,13 +1,25 @@
 extends ../../layouts/ui-layout.pug
 
 block variables
-	- var title = 'Карточки - UI-kit и HTML фреймворк - Документация'
-	- var pageClass = 'body--dashboard'
+	- var title = 'Карточки - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
 
 block content
 	include ../../sections/ui-nav-inside-ui.pug
-
 	.main-wrapper
-		.container.container--left
+		.container
 			.title Карточки
-		
+			h3.pb-40 Карточка - Пост в блоге
+			.row 
+				col-md-4
+					+card-post('blog-preview.png', 'text')
+						h2 Поездка в New York пример длинного названия поста ...
+				
+					pre.
+						+card-post('blog-preview.png', 'text')
+				col-md-4
+					+card-portfolio('portfolio-preview.png', 'text')
+						h2 Верстка Landing Page
+
+					pre.
+						+card-portfolio('portfolio-preview.png', 'text')
