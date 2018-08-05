@@ -43,7 +43,7 @@ block content
 			.section-ui
 				p
 					em.
-						Элементы формы Фотографии
+						Элементы формы Загрузка фотографии
 
 			.section-ui 
 				p.label.
@@ -51,28 +51,29 @@ block content
 				p.
 					Изображение jpg или png, размером больше чем 100х100 пикселей, и весом до 2Мб.
 				+formInput('id', 'post', 'action', 'Выбрать файл', 'Файл не выбран')
-				pre.
+			pre.
 					+formInput('id', 'post', 'action', 'Выбрать файл', 'Файл не выбран')
-
+			.section-ui 
 				p.label.
 					Фотографии
 				p.
 					Изображение jpg или png, размером больше чем 100х100 пикселей, и весом до 2Мб.
 				+formInput('id', 'post', 'action', 'Выбрать файл', 'my-lovely-photo.jpg')
-				pre.
-					+formInput('id', 'post', 'action', 'Выбрать файл', 'my-lovely-photo.jpg')
-
+			pre.
+				+formInput('id', 'post', 'action', 'Выбрать файл', 'my-lovely-photo.jpg')
+			.section-ui 
 				p.label.
 					Изображение
 				p.
 					Изображение jpg или png, рекомендуемая ширина 945px и больше, высота от 400px и более, вес до 2Мб.
 				+formInput('id', 'post', 'action', 'Выбрать файл', 'park-image.jpg')
-				pre.
-					+formInput('id', 'post', 'action', 'Выбрать файл', 'park-image.jpg')
-
+			pre.
+				+formInput('id', 'post', 'action', 'Выбрать файл', 'park-image.jpg')
+			.section-ui 
 				div.formInput-image
 					img(src="../img/blog/img-post-uploaded.jpg")
-					+button-removesmall('Удалить', '#')
+					.formInput-image__delete-button
+						+button-removesmall('Удалить', '#')
 
 
 
