@@ -1,39 +1,23 @@
 // Секция под футер для сайта
 footer
-	- 
-		var navigation = [
-			{name: 'Главная', link: 'index.html'},
-			{name: 'Обо мне', link: 'index.html'},
-			{name: 'Работы', link: 'index.html'},
-			{name: 'Блог', link: 'index.html'},
-			{name: 'Контакты', link: 'index.html'}
-			]
-
-	.footer
-		.footer-nav__item.copyright
-			p
-				| © Юрий Ключевский <br>
-				| Создано с 
-				i.fas.fa-heart
-				|  в 
-				a(href='http://webcademy.ru' target='_blank')
-					span.
-						WebCademy.ru 
-				| в 2018 году
-		nav.footer-nav.footer-nav__item
-			ul
-				each item in navigation
-					li
-						a(href= item.link)= item.name
-
-		.footer-nav__item.footer__icons
-			a(href='#' target='_blank')
-				i(class='fab fa-vk')
-			a(href='#' target='_blank')
-				i(class='fab fa-twitter')
-			a(href='#' target='_blank')
-				i(class='fab fa-youtube')
-			a(href='#' target='_blank')
-				i(class='fab fa-instagram')
-			a(href='#' target='_blank')
-				i(class='fab fa-facebook-f')
+	.footer.pt-55.pb-70
+		.container
+			.row
+				.footer__item.footer__copyright.col-lg-5
+					p © WebDev Team04 - Code Heroes #[br]
+						| Создано с #[i.fas.fa-heart] в 
+						a(href='http://webcademy.ru' target='_blank') #[span WebCademy.ru] 
+						| в 2018 году
+				nav.footer-nav.col-lg-3
+					ul
+						+footerNavlink('index.html', 'Главная')
+						+footerNavlink('index.html', 'Обо мне')
+						+footerNavlink('index.html', 'Работы')
+						+footerNavlink('index.html', 'Блог')
+						+footerNavlink('index.html', 'Контакты')
+				.footer__item.footer__icons.col-lg-4
+					+footerIconLink('#', 'fab fa-vk')
+					+footerIconLink('#', 'fab fa-twitter')
+					+footerIconLink('#', 'fab fa-youtube')
+					+footerIconLink('#', 'fab fa-instagram')
+					+footerIconLink('#', 'fab fa-facebook-f')
