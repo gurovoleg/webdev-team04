@@ -8,30 +8,54 @@ block content
 	include ../../sections/ui-nav-inside-ui.pug
 
 	.main-wrapper
-		.container.container--left
+		.container-fluid.container--left
 			.title Шапка общая
+			
 				p Шапка-гость 
 			header.header.header-guest
 				.header_container
 					.header_top
 						+logo('Digital Lifestyle','Сайт IT специалиста')
-						div.header_registration
-							+link('Регистрация', '#').header_registration-link
-							+link('Вход', '#').header_registration-link
-					nav.header_nav
+						div.header-registration
+							+link('Регистрация', '#').header-registration_link
+							+link('Вход', '#').header-registration_link
+					nav.header-nav
 						ul
 							+linkNav('Главная', '#')
 							+linkNav('Обо мне', '#')
 							+linkNav('Работы', '#')
-							+linkNav('Блог', '#').header__nav-active
+							+linkNav('Блог', '#').header-nav_active
 							+linkNav('Контакты', '#')
-			
-			p Шапка-Администратора  
+							
+			.section-ui.mt-20
+				.title-medium Подключение из файлa
+				pre include ../../sections/header.pug
+				p
+					| 	Шапка-гость
+				pre.
+					header.header.header-guest
+						.header_container
+							.header_top
+								+logo('Digital Lifestyle','Сайт IT специалиста')
+								div.header-registration
+									+link('Регистрация', '#').header-registration_link
+									+link('Вход', '#').header-registration_link
+							nav.header-nav
+								ul
+									+linkNav('Главная', '#')
+									+linkNav('Обо мне', '#')
+									+linkNav('Работы', '#')
+									+linkNav('Блог', '#').header-nav_active
+									+linkNav('Контакты', '#')
+
+
+				p Шапка-Администратора 
+				
 			header.header.header-admin
 				.header_admin-container
 					.header_top
 						+logo('Digital Lifestyle','Сайт IT специалиста')
-					nav.header_nav
+					nav.header-nav
 						ul
 							+linkNav('Главная', '#')
 							+linkNav('Обо мне', '#')
@@ -39,31 +63,76 @@ block content
 							+linkNav('Блог', '#')
 							+linkNav('Контакты','#')
 							
-			p Шапка-Пользователь 
-			header.header-user.header
+			.section-ui.mt-20
+				title-medium Подключение из файла
+				pre include ../../sections/header.pug
+				p
+					|	Шапка-Администратора
+				pre.
+
+					header.header.header-admin
+						.header_admin-container
+							.header_top
+								+logo('Digital Lifestyle','Сайт IT специалиста')
+							nav.header-nav
+								ul
+									+linkNav('Главная', '#')
+									+linkNav('Обо мне', '#')
+									+linkNav('Работы', '#')
+									+linkNav('Блог', '#')
+									+linkNav('Контакты','#')
+
+
+				p.
+					Шапка-Пользователь 
+			header.header
 				.header_container.header-container-user
 					.header_top
 						+logo('Digital Lifestyle','Сайт IT специалиста')
 						div.header_right-col
-							div.header-avatar
-								+avatar-small('photo-big.jpg')
+							+avatar-small('photo-big.jpg')
 							div.header-user
-								p.header-user-name
+								p.header-user_name
 									|	Юрий Ключевский
-								span пользователь
-								div.header-user-but
+								span
+									|	пользователь
+								div.header-user_but
 									+button-profile('Профиль', '#')
 									+button-profile('Выход', '#')
-					nav.header_nav
+					nav.header-nav
 						ul
 							+linkNav('Главная', '#')
 							+linkNav('Обо мне', '#')
 							+linkNav('Работы', '#')
-							+linkNav('Блог', '#').header__nav-active
+							+linkNav('Блог', '#').header-nav_active
 							+linkNav('Контакты', '#')
 					
 					//	include ../../sections/header.pug
 
 		.section-ui.mt-20
 			.title-medium Подключение из файла
-		pre include ../../sections/header.pug
+			pre include ../../sections/header.pug
+			p.
+				Шапка-Пользователь 
+			pre.
+				header.header
+					.header_container.header-container-user
+						.header_top
+							+logo('Digital Lifestyle','Сайт IT специалиста')
+							div.header_right-col
+								+avatar-small('photo-big.jpg')
+								div.header-user
+									p.header-user_name
+										|	Юрий Ключевский
+									span
+										|	пользователь
+									div.header-user_but
+										+button-profile('Профиль', '#')
+										+button-profile('Выход', '#')
+						nav.header-nav
+							ul
+								+linkNav('Главная', '#')
+								+linkNav('Обо мне', '#')
+								+linkNav('Работы', '#')
+								+linkNav('Блог', '#').header-nav_active
+								+linkNav('Контакты', '#')

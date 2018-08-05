@@ -10,8 +10,8 @@ mixin linkList(text, link)
 
 
 mixin linkNav(text, link)
-	li.header__nav-item
-		a.header__nav-link(target!=attributes.target, class!=attributes.class href=link ) #{text}
+	li.header-nav_item
+		a.header-nav_link(target!=attributes.target, class!=attributes.class href=link ) #{text}
 
 mixin postLink(text, link)
 	a.post-info__link(target!=attributes.target, class!=attributes.class href=link ) #{text}
