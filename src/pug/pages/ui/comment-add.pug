@@ -18,21 +18,17 @@ block content
 							+avatar-small('avatar-1.jpg')
 						.comment-add-block__right
 							h6.comment-add-block__right-title Юрий Ключевский
-							.notify.notify--error.comment-add-block__right-notification Комментарий не может быть пустым	
+							+notification('Комментарий не может быть пустым', 'error')
 							+commentAdd('add_comment', 'Присоединиться к обсуждению...')
-							.comment-add-block__right-button
-								+button('Опубликовать', '#')
+							+button('Опубликовать', '#')
 
 
 			pre.
-				.user-content
-					h2 Оставить комментарий
-					.comment-add-block
-						.comment-add-block__left
-							+avatar-small('avatar-1.jpg')
-						.comment-add-block__right
-							h6.comment-add-block__right-title Юрий Ключевский
-							.notify.notify--error.comment-add-block__right-notification Комментарий не может быть пустым	
-							+commentAdd('add_comment', 'Присоединиться к обсуждению...')
-							.comment-add-block__right-button
-								+button('Опубликовать', '#')
+				.comment-add-block
+					.comment-add-block__left
+						+avatar-small('avatar-1.jpg')
+					.comment-add-block__right
+						h6.comment-add-block__right-title Юрий Ключевский
+						+notification('Комментарий не может быть пустым', 'error')	
+						+commentAdd('add_comment', 'Присоединиться к обсуждению...')
+						+button('Опубликовать', '#')
