@@ -22,8 +22,8 @@ mixin textArea(name, type, placeholder,label)
 		label.label #{label}
 		textarea.textarea(name=name,type=type, placeholder=placeholder)
 
-mixin formInput(id, method, action, textButton, labelText)
-	form.file-upload(id=id, method=method, action=action)
-		input.file__upload-input(type="file")
-		button.file__upload-button #{textButton}
-		label.file__upload-text #{labelText}
+mixin formInput(id, method, action, labelText, text)
+	form(id=id, method=method, action=action)
+		input.inputfile(type="file",name="file",id="file",multiple='true')
+		label(for="file") #{labelText}
+		span #{text}
