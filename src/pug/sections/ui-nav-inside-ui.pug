@@ -13,17 +13,16 @@
 	.left-panel__section
 		p.strong Блоки
 		.left-panel-nav
+			+linkLeftPanel("Аватарки", "avatars.html")
+			+linkLeftPanel("Анимация загрузки", "page-spinner.html")
+			+linkLeftPanel("Бейджи", "badges.html")
+			+linkLeftPanel("Карточки", "cards.html")
 			+linkLeftPanel("Кнопки", "buttons.html")
-			+linkLeftPanel("Типографика", "typhography.html")
-			+linkLeftPanel("Формы", "forms.html")
 			+linkLeftPanel("Комментарии", "comment-register.html")
 			+linkLeftPanel("Оставить комментарий", "comment-add.html")
-			+linkLeftPanel("Карточки", "cards.html")
-			+linkLeftPanel("Бейджи", "badges.html")
-			+linkLeftPanel("Аватарки", "avatars.html")
-			+linkLeftPanel("Ошибки", "errors.html")
+			+linkLeftPanel("Типографика", "typhography.html")
 			+linkLeftPanel("Уведомления", "notifications.html")
-			+linkLeftPanel("Анимация загрузки", "page-spinner.html")
+			+linkLeftPanel("Формы", "forms.html")
 
 	.left-panel__section
 		p.strong Секции
@@ -44,11 +43,12 @@
 			//- +linkLeftPanel("Шапка общая", "header.html")
 			+linkLeftPanel("Подвал сайта", "footer.html")
 
+	.left-panel__section
+		p.strong Страницы
+		.left-panel-nav
+			+linkLeftPanel("Вход на сайт", "../login.html")
+			+linkLeftPanel("Главная", "../main.html")
 
-	//- .left-panel__section
-	//- 	p.strong Страницы
-	//- 	.left-panel-nav
-	//- 		+linkLeftPanel("Вход на сайт", "../login.html")
 	//- 		+linkLeftPanel("Регистрация", "../registration.html")
 	//- 		+linkLeftPanel("Страница Блог - с отдельным постом", "../blog-full-post.html")
 	//- 		+linkLeftPanel("Фильмотека", "../filmoteka.html")

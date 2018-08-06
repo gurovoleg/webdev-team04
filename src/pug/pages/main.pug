@@ -1,0 +1,12 @@
+extends ../layouts/main.pug
+
+block variables
+	- var title = 'Главная';
+	- var pageClass = 'content-page';
+
+block content
+	//- контейнер с классом section-page (_base.less) добавлен для стандартных отступов,
+	//- которые присутствуют практически на всех макетах
+	//- при отличие отступов необходимо добавлять класс модификатор section-page--mypage
+	.container.user-content.section-page
+		h1 Заготовка для страницы
