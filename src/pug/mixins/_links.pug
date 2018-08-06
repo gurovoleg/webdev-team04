@@ -10,3 +10,6 @@ mixin linkList(text, link)
 
 mixin postLink(text, link)
 	a.post-info__link(target!=attributes.target, class!=attributes.class href=link ) #{text}
+
+mixin messageLink(text, link)
+	a.user-message__link(target!=attributes.target, class!=attributes.class href=link ) #{text}
