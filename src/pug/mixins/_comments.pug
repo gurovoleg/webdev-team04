@@ -1,0 +1,11 @@
+mixin comment-item__content(userName, date, time, text)
+	
+	.comment-item__content
+		.comment-item__top
+			.user-name #{userName}
+			.comment-item__date
+				span
+					i.far.fa-clock
+				span #{date} года в #{time}
+		.comment-item__text.
+			 #{text}
