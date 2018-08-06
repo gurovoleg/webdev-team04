@@ -1,15 +1,17 @@
+//- mixin notification(title, mode)
+//- 	div(class="notify notify--" + mode   ) #{title}
+
+//- mixin notificationDesc(title, mode)
+//- 	div(class="notify no-radius-bottom notify--" + mode   ) #{title}
+//- 	.notify.no-radius-top
+//- 		block
+
 mixin notification(title, mode)
-	div(class="notify notify--" + mode   ) #{title}
-
-mixin notificationDesc(title, mode)
-	div(class="notify no-radius-bottom notify--" + mode   ) #{title}
-	.notify.no-radius-top
-		block
-
-mixin notificationUniversal(title, mode)
 	if block
-		div(class="notify no-radius-bottom notify--" + mode   ) #{title}
-		.notify.no-radius-top
-			block
+		//- &attributes(attributes) используется для добавления дополнительных классов
+		.notify.no-paddings&attributes(attributes) 
+			div(class="notify no-radius-bottom notify--" + mode   ) #{title}
+			.notify.no-radius-top
+				block
 	else
-		div(class="notify mb-10 notify--" + mode   ) #{title}
+		div(class="notify notify--" + mode   )&attributes(attributes) #{title}
