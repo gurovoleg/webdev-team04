@@ -12,19 +12,19 @@ block content
 			.title Шапка общая
 			
 				p Шапка-гость 
-			header.header.header-guest
-				.header_container
-					.header_top
+			header.header
+				.header-container
+					.header-top
 						+logo('Digital Lifestyle','Сайт IT специалиста')
 						div.header-registration
-							+link('Регистрация', '#').header-registration_link
-							+link('Вход', '#').header-registration_link
+							+link('Регистрация', '#').header-registration__link
+							+link('Вход', '#').header-registration__link
 					nav.header-nav
 						ul
 							+linkNav('Главная', '#')
 							+linkNav('Обо мне', '#')
 							+linkNav('Работы', '#')
-							+linkNav('Блог', '#').header-nav_active
+							+linkNav('Блог', '#').header-nav__active
 							+linkNav('Контакты', '#')
 							
 			.section-ui.mt-20
@@ -33,27 +33,27 @@ block content
 				p
 					| 	Шапка-гость
 				pre.
-					header.header.header-guest
-						.header_container
-							.header_top
+					header.header
+						.header-container
+							.header-top
 								+logo('Digital Lifestyle','Сайт IT специалиста')
 								div.header-registration
-									+link('Регистрация', '#').header-registration_link
-									+link('Вход', '#').header-registration_link
+									+link('Регистрация', '#').header-registration__link
+									+link('Вход', '#').header-registration__link
 							nav.header-nav
 								ul
 									+linkNav('Главная', '#')
 									+linkNav('Обо мне', '#')
 									+linkNav('Работы', '#')
-									+linkNav('Блог', '#').header-nav_active
+									+linkNav('Блог', '#').header-nav__active
 									+linkNav('Контакты', '#')
 
 
 				p Шапка-Администратора 
 				
-			header.header.header-admin
-				.header_admin-container
-					.header_top
+			header.header
+				.header-admin__container
+					.header-top
 						+logo('Digital Lifestyle','Сайт IT специалиста')
 					nav.header-nav
 						ul
@@ -70,9 +70,9 @@ block content
 					|	Шапка-Администратора
 				pre.
 
-					header.header.header-admin
-						.header_admin-container
-							.header_top
+					header.header
+						.header-admin__container
+							.header-top
 								+logo('Digital Lifestyle','Сайт IT специалиста')
 							nav.header-nav
 								ul
@@ -86,17 +86,17 @@ block content
 				p.
 					Шапка-Пользователь 
 			header.header
-				.header_container.header-container-user
-					.header_top
+				.header-container
+					.header-top
 						+logo('Digital Lifestyle','Сайт IT специалиста')
-						div.header_right-col
+						div.header-right__col
 							+avatar-small('photo-big.jpg')
 							div.header-user
-								p.header-user_name
+								p.header-user__name
 									|	Юрий Ключевский
 								span
 									|	пользователь
-								div.header-user_but
+								div.header-user__but
 									+button-profile('Профиль', '#')
 									+button-profile('Выход', '#')
 					nav.header-nav
@@ -104,7 +104,7 @@ block content
 							+linkNav('Главная', '#')
 							+linkNav('Обо мне', '#')
 							+linkNav('Работы', '#')
-							+linkNav('Блог', '#').header-nav_active
+							+linkNav('Блог', '#').header-nav__active
 							+linkNav('Контакты', '#')
 					
 					//	include ../../sections/header.pug
@@ -116,17 +116,17 @@ block content
 				Шапка-Пользователь 
 			pre.
 				header.header
-					.header_container.header-container-user
-						.header_top
+					.header-container
+						.header-top
 							+logo('Digital Lifestyle','Сайт IT специалиста')
-							div.header_right-col
+							div.header-right__col
 								+avatar-small('photo-big.jpg')
 								div.header-user
-									p.header-user_name
+									p.header-user__name
 										|	Юрий Ключевский
 									span
 										|	пользователь
-									div.header-user_but
+									div.header-user__but
 										+button-profile('Профиль', '#')
 										+button-profile('Выход', '#')
 						nav.header-nav
@@ -134,5 +134,5 @@ block content
 								+linkNav('Главная', '#')
 								+linkNav('Обо мне', '#')
 								+linkNav('Работы', '#')
-								+linkNav('Блог', '#').header-nav_active
+								+linkNav('Блог', '#').header-nav__active
 								+linkNav('Контакты', '#')

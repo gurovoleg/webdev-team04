@@ -6,7 +6,7 @@
    
 }
 
-.header_container{
+.header-container{
 	background-color:rgba(0, 88, 139, .8);
 	height: 100%;
 	display: flex;
@@ -16,7 +16,9 @@
 	padding-top: 40px;
 	color:@white;
 }
-.header_admin-container{
+
+.header-admin__container{
+	width: 100%;
 	background-color:rgba(0, 88, 139, .7);
 	height: 100%;
 	display: flex;
@@ -26,7 +28,7 @@
 	padding-top: 40px;
 	color:@white;
 }
-.header_top{
+.header-top{
 	display:flex;
 	flex-direction:row;
 	margin-bottom: 30px;
@@ -37,26 +39,28 @@
 	font-size:32px;
 	font-weight: 900;
 	
-	 &_icon{
+	 &-icon{
 		 margin-right: 20px;
 		 text-decoration:none;
 	 }	 
    }
-.header-logo_title {
+.header-logo__title {
 		 color:@white;
 		 text-decoration:none; 
 	 }
-.header-logo_sub{
+.header-logo__sub{
 	margin-top: 15px;
 	font-size: 16px;
 	color: #fff;
 	opacity: 0.6;
 	font-weight: normal;
+	display: block;
+	text-decoration: none;
 }
 
 .header-registration{
 	margin-left: auto;
-		&_link{
+		&__link{
 			color: #fefefe;
 			font-size: 16px;
 			text-decoration: none;
@@ -70,7 +74,7 @@
 		 }
       }
 
- .header_right-col{
+ .header-right__col{
 	margin-left: auto;
 	color: @white;
 	display: flex;
@@ -89,7 +93,7 @@
 	li{
 		display: inline-block;
 	}
-	&_link{
+	&__link{
 	display: block;
 	color: #fff;
 	font-size: 18px;
@@ -104,7 +108,7 @@
  		}
 	}
 
-.header-nav_active{
+.header-nav__active{
 	border-bottom: 1px solid transparent;
 	transition: border-bottom 0.4s;
 			&:hover, &:active, &:focus {
@@ -115,7 +119,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-left: 15px;
-		&_name{
+		&__name{
 			padding: 0;
 			margin: 0;
 			font-size: 16px;
@@ -131,7 +135,7 @@
 		margin-bottom: 10px;
 	}
 }
-.header-user_but{
+.header-user__but{
 	.button{
 		background-color:#235a79;
 		font-size: 13px;
@@ -142,8 +146,7 @@
 		padding-right: 13px;
 		padding-left: 13px;
 			&:hover, &:active, &:focus {
-			   background-color:#2c6687;
-			   border-color: #2c6687;
+			 	 opacity: 0.25;
 		        }
 			&:last-child {
 			margin-right: 0px;
