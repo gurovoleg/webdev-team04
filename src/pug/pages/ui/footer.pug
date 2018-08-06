@@ -1,8 +1,8 @@
 extends ../../layouts/ui-layout.pug
 
 block variables
-	- var title = 'Подвал сайта - UI-kit и HTML фреймворк - Документация'
-	- var pageClass = 'body--dashboard'
+	- var title = 'Подвал сайта - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
 
 block content
 	include ../../sections/ui-nav-inside-ui.pug
@@ -11,7 +11,9 @@ block content
 		.container.container--left
 			.title Подвал сайта
 
-		p Футер подключаем из отдельной файла, через include
+		p Футер подключаем из отдельного файла, через include
+
+		include ../../sections/footer.pug
 
 		.section-ui.mt-20
 			.title-medium Подключение из файла
