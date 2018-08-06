@@ -16,8 +16,11 @@ mixin input(name, type, placeholder,label)
 	div.form-group
 		label.label #{label}
 			input.input(name=name,type=type, placeholder=placeholder)
-			
+
 mixin textArea(name, type, placeholder,label)
 	div.form-group
 		label.label #{label}
 		textarea.textarea(name=name,type=type, placeholder=placeholder)
+
+mixin commentAdd(name,placeholder)
+	textarea.textarea.textarea--comment-add(name=name, placeholder=placeholder)
