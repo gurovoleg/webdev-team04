@@ -1,0 +1,21 @@
+include _mixins-links.pug
+
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./_head-part.pug
+		
+	body(class=pageClass)
+
+		include ../sections/header-admin.pug
+		
+		block content
+			// контейнер с классом section-page (_base.less) добавлен для стандартных отступов,
+			// которые присутствуют пркатически на всех макетах
+			// при отличие отступов необходимо добавлять класс модификатор section-page--mypage
+			.container.section-page
+
+		include ../sections/footer.pug
+		include ./_footer-part.pug
