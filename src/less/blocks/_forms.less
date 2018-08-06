@@ -52,6 +52,21 @@
 				}	
 		   }
 
+//custom for coomment-add.html
+.textarea.textarea--comment-add {
+	border: 2px solid @textarea-comment-add;
+	margin-bottom: 10px;
+	resize: none;
+
+	&::placeholder { 
+    opacity: .5; 
+	}
+
+	&:active, &:hover, &:focus {
+			border: 2px solid darken(@textarea-comment-add, 10%)!important;
+			box-shadow: none!important;
+	}	
+}
 
 .form-checkbox{		
 	 display: inline-block;
