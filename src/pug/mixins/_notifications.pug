@@ -1,11 +1,3 @@
-//- mixin notification(title, mode)
-//- 	div(class="notify notify--" + mode   ) #{title}
-
-//- mixin notificationDesc(title, mode)
-//- 	div(class="notify no-radius-bottom notify--" + mode   ) #{title}
-//- 	.notify.no-radius-top
-//- 		block
-
 mixin notification(title, mode)
 	if block
 		//- &attributes(attributes) используется для добавления дополнительных классов
