@@ -7,9 +7,29 @@
 	border-radius: @radius;
 	background-color: @background;
 	box-shadow: @shadow;
+	width: 360px;
 	padding: 20px;
 }
 
 .card > .title-1, .card > .title-2, .card > .title-3, .card > .title-4, .card > .title-5, .card > .title-6 {
 	margin-top: 0;
+}
+.card__img {
+	width: 100%;
+	margin-bottom: 5px;
+	
+	& img {
+		max-width: 100%;
+	}
+}
+.card__body-text {
+	font-size: 22px;
+	margin-bottom: 16px;
+}
+.card--portfolio {
+	padding: 0;
+}
+.card--portfolio .card__body {
+	padding: 20px;
+	padding-top: 0;
 }
