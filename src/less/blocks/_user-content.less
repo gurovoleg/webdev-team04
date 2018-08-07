@@ -9,14 +9,13 @@
 	h5 { font-size: 18px; font-weight: 900; margin: 1em 0 1em; color: @title;}
 	h6 { font-size: 16px; font-weight: 900; margin: 1em 0 1em; }color: @title;
 
-	a {
-		color: @active;
-	}
-
 	p {
 		color: @text;
 		line-height: 2em;
 		margin-bottom: 0.9em;
+		a {
+			color: @active;
+		}
 	}
 
 	hr {
@@ -50,6 +49,11 @@
 	&>h1, &>h2, &>h3, &>h4, &>h5, &>h6, 
 	&>.title-1, &>.title-2, &>.title-3, &>.title-4, &>.title-5, &>.title-6, &>.title {
 		margin-top: 0;
+	}
+	// custom for comment-add.html
+	h6.comment-add-block__right-title {
+		margin-top: 0;
+		margin-bottom: 10px;
 	}
 	
 }// .user-content
