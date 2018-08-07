@@ -20,7 +20,7 @@ var rename = require('gulp-rename');
 
 // Images
 var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
+// var pngquant = require('imagemin-pngquant');
 
 // HTML, CSS, JS
 var usemin = require('gulp-usemin');
@@ -224,7 +224,7 @@ gulp.task('img:dist', function() {
 		progressive: true,
 		// optimizationLevel: 5,
 		svgoPlugins: [{removeViewBox: false}],
-		use: [pngquant()],
+		// use: [pngquant()],
 		interlaced: true
 	}))
     .pipe(gulp.dest('./docs/img'));

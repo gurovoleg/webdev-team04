@@ -1,8 +1,8 @@
 extends ../../layouts/ui-layout.pug
 
 block variables
-	- var title = 'Кнопки - UI-kit и HTML фреймворк - Документация'
-	- var pageClass = 'body--dashboard'
+	- var title = 'Кнопки - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
 
 block content
 	include ../../sections/ui-nav-inside-ui.pug
@@ -10,10 +10,42 @@ block content
 	.main-wrapper
 		.container.container--left
 			.title Кнопки
-			p
-				em Одна кнопка ниже оформлена для примера.
 
+			h2 Кнопки с иконками
 			.section-ui
-				+button('Подробнее', '#') 
+				+button-icon-right('Вперёд', '#', 'fas fa-arrow-right')
+				+button-icon-left('Назад', '#', 'fas fa-arrow-left')
+			pre.
+				+button-icon-right('Вперёд', '#', 'fas fa-arrow-right')
+				+button-icon-left('Назад', '#', 'fas fa-arrow-left')
+			
+			h2 Большие кнопки
+			.section-ui
+				+button('Подробнее', '#')
+				+button-edit('Редактировать', '#')
+				+button-remove('Удалить', '#')
+				+button-save('Сохранить', '#')
+				+button-enter('Войти', '#')
 			pre.
 				+button('Подробнее', '#')
+				+button-edit('Редактировать', '#')
+				+button-remove('Удалить', '#')
+				+button-save('Сохранить', '#')
+				+button-enter('Войти', '#')
+
+			h2 Кнопки малого размера.
+
+			.section-ui
+				+button-profile('Профиль', '#')
+				+button-small('Подробнее', '#')
+				+button-editsmall('Редактировать', '#')
+				+button-savesmall('Сохранить', '#')
+				+button-removesmall('Удалить', '#')
+			pre.
+				+button-profile('Профиль', '#')
+				+button-small('Подробнее', '#')
+				+button-editsmall('Редактировать', '#')
+				+button-savesmall('Сохранить', '#')
+				+button-removesmall('Удалить', '#')
+
+
