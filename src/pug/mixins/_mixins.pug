@@ -1,5 +1,24 @@
 // Разные миксины по одному, которые понадобятся. Для логотипа, бейджа, и т.д.
+mixin logo(title, subtitle)
+	.logo
+		.logo-icon
+			i(class = "far fa-paper-plane")
+		.logo_description
+			a(href="#").header-logo__title #{title}
+			a(href="#").header-logo__sub #{subtitle}
+
 
 mixin blogImg(blogImg, altDesc)
 	img(src="../img/blog/"+ blogImg alt= altDesc) 
+
+mixin footerNavlink(link, name)
+	li
+		a(href= link) #{name}
+    
+mixin footerIconLink(link, className)
+	a(href= link target='_blank')
+		i(class= className)
+
+mixin blogImg(blogImg, altDesc)
+	img(src="../img/blog/"+ blogImg alt= altDesc)
 
