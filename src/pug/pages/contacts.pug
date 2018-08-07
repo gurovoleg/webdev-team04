@@ -1,0 +1,10 @@
+extends ../layouts/main.pug
+
+block variables
+	- var title = 'Контакты';
+	- var pageClass = 'content-page';
+
+block content
+	.container.user-content.section-page
+		+button-editsmall('Редактировать', '#')
+		+button-small('Подробнее', '#')
