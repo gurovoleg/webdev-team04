@@ -1,0 +1,15 @@
+extends ../../layouts/ui-layout.pug
+
+block variables
+	- var title = 'Редактирование - опыт работы - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
+
+mixin edit-job-item(date, btnText, title, text)
+
+	.edit-job-item.mb-20
+		.edit-job-item__top
+			.edit-job-item__date #{date}
+			a(class="button button--remove" href=link) #{btnText}
+		.edit-job-item__title #{title}
+		.edit-job-iteme__text
+			p #{text}
