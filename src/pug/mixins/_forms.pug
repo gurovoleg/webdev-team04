@@ -22,10 +22,9 @@ mixin textArea(name, type, placeholder,label)
 		label.label #{label}
 		textarea.textarea(name=name,type=type, placeholder=placeholder)
 
-mixin formInput(id, method, action, labelText, text)
-	form(id=id, method=method, action=action)
-		input.inputfile(type="file",name="file",id="file",multiple='true')
-		label(for="file") #{labelText}
+mixin inputFileUpload(labelText, text)
+		input.inputfile(type="file" name="file" id="file")
+		label(class="label-input-file" for="file") #{labelText}
 		span #{text}
 
 mixin commentAdd(name,placeholder)
