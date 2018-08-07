@@ -1,11 +1,29 @@
-mixin comment-item__content(userName, date, time, text)
+mixin comments-item(imgSrc,userName, date, time, text)
 	
-	.comment-item__content
-		.comment-item__top
-			.user-name #{userName}
-			.comment-item__date
-				span
-					i.far.fa-clock
-				span #{date} года в #{time}
-		.comment-item__text.
-			 #{text}
+	.comments-item
+		.avatar-block
+			.avatar.avatar--small
+				img(src="../img/avatars/"+ imgSrc alt="avatar")
+		.comment-item__content
+			.comment-item__top
+				.user-name #{userName}
+				.comment-item__date
+					span
+						i.far.fa-clock
+					span  #{date} года в #{time}
+			.comment-item__text.
+				#{text}
+
+	//- .comments-item
+	//- 	.avatar-block
+	//- 		.avatar.avatar--small
+	//- 			img(src="../img/avatars/"+	imgSrc alt="avatar")
+	//- 		.comment-item__content
+	//- 			.comment-item__top
+	//- 				.user-name #{userName}
+	//- 				.comment-item__date
+	//- 				span
+	//- 				i.far.fa-clock
+	//- 				span #{date} года в #{time}
+	//- 			.comment-item__text.
+	//- 				#{text}
