@@ -1,15 +1,21 @@
-extends ../../layouts/ui-layout.pug
+.section-page.section-.aboutme-job
+	.container
+		.row
+			.col-md-10.offset-md-1
+				.title-1 Редактировать - Опыт работы
+				.aboutme-job-block
+					+job-item('февраль 2017  — по настоящее время', 'Удалить', 'Frontend разработчик, Вконтактe, mail.ru group', 'Работы в команде Вконтакте. Работал в команде над обновление сервиса Музыка, работа над видео разделом. Создание видеоплеера. Создание кроссбраузерных компонентов. Работа над оптимизацией скорости загрузки медиа контента.')
 
-block variables
-	- var title = 'Редактирование - опыт работы - UI-kit и HTML фреймворк - Документация';
-	- var pageClass = 'body--dashboard';
+					+job-item('февраль 2017  — по настоящее время', 'Удалить', 'Frontend разработчик, Вконтактe, mail.ru group', 'Работы в команде Вконтакте. Работал в команде над обновление сервиса Музыка, работа над видео разделом. Создание видеоплеера. Создание кроссбраузерных компонентов. Работа над оптимизацией скорости загрузки медиа контента.')
 
-mixin edit-job-item(date, btnText, title, text)
+				.title-1 Добавить новое место
 
-	.edit-job-item.mb-20
-		.edit-job-item__top
-			.edit-job-item__date #{date}
-			a(class="button button--remove" href=link) #{btnText}
-		.edit-job-item__title #{title}
-		.edit-job-iteme__text
-			p #{text}
+				.add-job-block
+
+					+input('firstname','text', 'Введите даты начала и окончания работы','Период')
+
+					+input('firstname','text', 'Введите название должности','Название должности')
+
+					+textArea('message', 'type', 'Напишите интересное краткое содержательное описание','Описание работы, должностные обязанности, достигнутые результаты')
+
+					+button-save('Добавить', '#')
