@@ -8,6 +8,8 @@
 	background-color: @background;
 	box-shadow: @shadow;
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 .card > .title-1, .card > .title-2, .card > .title-3, .card > .title-4, .card > .title-5, .card > .title-6 {
@@ -16,24 +18,16 @@
 .card__img {
 	width: 100%;
 	margin-bottom: 15px;
-	
-	&img {
-		max-width: 100%;
-	}
+	overflow:hidden;
 }
-.card__body {
-	position: relative;
-	padding-top: 5px;
-	padding-left: 20px;
-	padding-bottom: 10px;
-}
+
 .card__title {
-	font-family: 'OpenSans Semibold';
-	font-size: 23px;
+	font-family: 'Open Sans';
+	font-size: 22px;
 	line-height: 28px;
-	letter-spacing: 1.6px;
-	padding-bottom: 15px;
-	font-weight: 500;
+	font-weight: 600;
+	overflow:hidden;
+	text-overflow:ellipsis;
 }
 .card--post {
 	width: 360px;
@@ -44,4 +38,12 @@
 	padding-bottom: 20px;
 	width: 360px;
 	height: 315px;
+}
+
+.card__desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex:1;
 }

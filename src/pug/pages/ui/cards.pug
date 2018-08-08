@@ -10,14 +10,14 @@ block content
 	.main-wrapper
 		.container.container--left
 			.title Карточки
-			.title-2 Карточка - пост в блоге
-			+card-post('blog-preview.jpg', 'Поездка в New York пример длинного названия поста...' )
+			.title-2 Карточка - Пост в блоге
+			+card-post('blog-preview.jpg', 'Поездка в New York пример длинного названия поста...', '#' )
 
 			pre.
-				+card-post
+				+card-post('blog-preview.jpg', 'Поездка в New York пример длинного названия поста...', '#' )
 				
 			.title-2 Карточка - Пост в портфолио
-			+card-portfolio('portfolio-preview.jpg', 'Верстка Landing Page')
-
+			+card-portfolio('portfolio-preview.jpg', 'Верстка Landing Page', '#')
+			
 			pre.
-				+card-portfolio
+				+card-portfolio('portfolio-preview.jpg', 'Верстка Landing Page', '#')
