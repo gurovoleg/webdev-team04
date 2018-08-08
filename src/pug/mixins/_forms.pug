@@ -11,6 +11,7 @@ mixin checkbox(name, text, status)
 					input.checkbox(type='checkbox', name = name)
 					span.checkmark
 					| #{text}
+					
 
 mixin input(name, type, placeholder,label)
 	div.form-group
@@ -22,11 +23,10 @@ mixin textArea(name, type, placeholder,label)
 		label.label #{label}
 		textarea.textarea(name=name,type=type, placeholder=placeholder)
 
-mixin formInput(id, method, action, labelText, text)
-	form(id=id, method=method, action=action)
-		input.inputfile(type="file",name="file",id="file",multiple='true')
-		label(for="file") #{labelText}
-		span #{text}
+mixin inputFileUpload(labelText, text)
+	input.inputfile(type="file" name="file" id="file")
+	label(class="label-input-file" for="file") #{labelText}
+	span #{text}
 
 mixin commentAdd(name,placeholder)
 	textarea.textarea.textarea--comment-add(name=name, placeholder=placeholder)

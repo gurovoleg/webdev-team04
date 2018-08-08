@@ -1,12 +1,13 @@
-mixin card-post(imgSrc, text, link)
+mixin card(imgSrc, text, link)
 	.card.card--post
-		.card__img
-			img(src="../img/blog/"+imgSrc alt="img")
-		.card__title
-			h2
-			| #{text}
+		.card
+			.card__img
+				img(src="../img/blog/"+imgSrc alt="img")
+			.card__title
+				h2
+				| #{text}
 		
-		+button('Читать', '#')
+			+button('Читать', '#')
 
 mixin card-portfolio(imgSrc, text, link)
 	.card.card--portfolio
