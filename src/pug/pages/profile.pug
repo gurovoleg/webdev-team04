@@ -9,4 +9,22 @@ block content
 	//- которые присутствуют практически на всех макетах
 	//- при отличие отступов необходимо добавлять класс модификатор section-page--mypage
 	.container.user-content.section-page
-		h1 Заготовка для страницы
+		.row.align-items-center
+			.col
+				.title-1 Профиль
+			.col.text-right
+				+button-edit('Редактировать', '#')
+		.row
+			.col-md-auto
+				+avatar('photo-big.jpg')
+			.col.ml-35
+				.user-description.mb-20
+					.user-description__title Имя и фамилия
+					.user-description__desc Емельян Казаков
+				.user-description.mb-20
+					.user-description__title Email
+					.user-description__desc pilat@maill.ru
+				.user-description.mb-20
+					.user-description__title Страна, Город
+					.user-description__desc Россия, Казань
+		.title-2.profile-title Комментарий пользователя
