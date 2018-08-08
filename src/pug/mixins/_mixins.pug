@@ -7,9 +7,16 @@ mixin logo(title, subtitle)
 			a(href="#").header-logo__title #{title}
 			a(href="#").header-logo__sub #{subtitle}
 
+mixin footerNavlink(link, name)
+	li
+		a(href= link) #{name}
+    
+mixin footerIconLink(link, className)
+	a(href= link target='_blank')
+		i(class= className)
 
 mixin blogImg(blogImg, altDesc)
-	img(src="../img/blog/"+ blogImg alt= altDesc) 
+	img(src="../img/blog/"+ blogImg alt= altDesc)
 
 mixin portfolioImg(blogImg, altDesc)
 	img(src="img/my-portfolio/"+ blogImg alt= altDesc) 
@@ -24,6 +31,7 @@ mixin footerIconLink(link, className)
 
 mixin blogImg(blogImg, altDesc)
 	img(src="../img/blog/"+ blogImg alt= altDesc)
+
 	
 mixin navPortfolio()
 	nav.my-portfolio__nav
@@ -34,4 +42,5 @@ mixin navPortfolio()
 				| JavaScript, jQuery.
 			li.my-portfolio__item
 				| LESS, PUG, Gulp, npm, bower.
+
 

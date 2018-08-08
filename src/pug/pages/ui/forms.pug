@@ -51,9 +51,10 @@ block content
 				p.
 					Изображение jpg или png, размером больше чем 100х100 пикселей, и весом до 2Мб.
 				
-				+formInput('id', 'post', 'action', 'Выбрать файл', 'Файл не выбран')
+				+inputFileUpload('Выбрать файл', 'Файл не выбран')
 			pre.
-					+formInput('id', 'post', 'action', 'Выбрать файл', 'Файл не выбран')
+				+inputFileUpload('Выбрать файл', 'Файл не выбран')
+			
 			.section-ui 
 				div.formInput-image
 					img(src="../img/blog/img-post-uploaded.jpg")
