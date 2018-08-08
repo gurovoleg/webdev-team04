@@ -11,6 +11,9 @@ mixin logo(title, subtitle)
 mixin blogImg(blogImg, altDesc)
 	img(src="../img/blog/"+ blogImg alt= altDesc) 
 
+mixin portfolioImg(blogImg, altDesc)
+	img(src="img/my-portfolio/"+ blogImg alt= altDesc) 
+	
 mixin footerNavlink(link, name)
 	li
 		a(href= link) #{name}
@@ -21,4 +24,14 @@ mixin footerIconLink(link, className)
 
 mixin blogImg(blogImg, altDesc)
 	img(src="../img/blog/"+ blogImg alt= altDesc)
+	
+mixin navPortfolio()
+	nav.my-portfolio__nav
+		ul
+			li.my-portfolio__item
+				| HTML5, CSS3.
+			li.my-portfolio__item
+				| JavaScript, jQuery.
+			li.my-portfolio__item
+				| LESS, PUG, Gulp, npm, bower.
 
