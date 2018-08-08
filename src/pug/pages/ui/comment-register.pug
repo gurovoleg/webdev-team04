@@ -8,20 +8,20 @@ block content
 
 	.main-wrapper
 		.container.container--left
-			
-			.title.mb-0 Комментарий - Зарегистрироваться
+			.title Комментарий - Зарегистрироваться
 
-			.section-ui
+			include ../../sections/comment-register.pug
+
+
+			.section-ui.mt-30
+				.title-medium Подключение из файла
+			pre include ../../sections/comment-register.pug
+
+			.section-ui.mt-30
+				.title-medium Разметка
+			pre.
 				.comment-register
 					p
 						|#[a(href="#") Войдите] или #[a(href="#") зарегистрируйтесь]
 						br
 						|чтобы оставить комментарий
-
-			pre.
-				.section-ui
-					.comment-register
-						p
-							|#[a(href="#") Войдите] или #[a(href="#") зарегистрируйтесь]
-							br
-							|чтобы оставить комментарий
