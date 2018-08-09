@@ -9,9 +9,11 @@ html(lang="ru")
 		
 	body(class=pageClass)
 
-		include ../sections/header-user.pug
-		
-		block content
+		.wrapper
+			include ../sections/header-user.pug
+			
+			.content
+				block content
 
-		include ../sections/footer.pug
-		include ./_footer-part.pug
+			include ../sections/footer.pug
+			include ./_footer-part.pug
