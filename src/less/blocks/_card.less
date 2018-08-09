@@ -7,8 +7,9 @@
 	border-radius: @radius;
 	background-color: @background;
 	box-shadow: @shadow;
-	width: 360px;
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 .card > .title-1, .card > .title-2, .card > .title-3, .card > .title-4, .card > .title-5, .card > .title-6 {
@@ -16,20 +17,32 @@
 }
 .card__img {
 	width: 100%;
-	margin-bottom: 5px;
-	
-	& img {
-		max-width: 100%;
-	}
+	margin-bottom: 15px;
+	overflow:hidden;
 }
-.card__body-text {
+
+.card__title {
 	font-size: 22px;
-	margin-bottom: 16px;
+	line-height: 28px;
+	font-weight: 600;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.card--post {
+	width: 360px;
+	height: 308px;	
 }
 .card--portfolio {
 	padding: 0;
+	padding-bottom: 20px;
+	width: 360px;
+	height: 315px;
 }
-.card--portfolio .card__body {
-	padding: 20px;
-	padding-top: 0;
+
+.card__desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex:1;
 }
