@@ -6,7 +6,7 @@ mixin button-icon-right(text, link, icon)
         i(class= icon)
 
 mixin button-icon-left(text, link, icon)
-    a(class="button button--icon-left" href=link)&attributes(attributes) 
+    a(class="button button--icon-left" href=link)&attributes(attributes)
         i(class= icon)
         | #{text}
 
@@ -35,7 +35,12 @@ mixin button-savesmall(text, link)
     a(class="button button--small button--save" href=link)&attributes(attributes) #{text}
     
 mixin button-removesmall(text, link)
-    a(class="button button--small button--remove" href=link)&attributes(attributes) #{text}  
+    a(class="button button--small button--remove" href=link)&attributes(attributes) #{text}
 
 mixin button(text, link, mode, size)
-    a(href=link class="button button--" + mode + " button--" + size)&attributes(attributes) #{text}
+    if mode && size
+        a(href=link class="button button--" + mode + " button--" + size)&attributes(attributes) #{text}
+    else if mode
+        a(href=link class="button button--" + mode)&attributes(attributes) #{text}
+    else
+        a(href=link class="button")&attributes(attributes) #{text}
