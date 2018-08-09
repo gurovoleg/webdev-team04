@@ -30,3 +30,10 @@ mixin inputFileUpload(labelText, text)
 
 mixin commentAdd(name,placeholder)
 	textarea.textarea.textarea--comment-add(name=name, placeholder=placeholder)
+
+mixin editTechInput(text, type, name, labeltext)
+	p.edit-tech-text
+		b #{text}
+	input.input.edit-tech-input(name=name, type, placeholder="0")
+	label.edit-tech-label #{labeltext}
+
