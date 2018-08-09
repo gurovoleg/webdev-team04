@@ -35,14 +35,12 @@ mixin button-savesmall(text, link)
     a(class="button button--small button--save" href=link)&attributes(attributes) #{text}
     
 mixin button-removesmall(text, link)
-
-    a(class="button button--small button--remove" href=link)&attributes(attributes) #{text}
-
-mixin button-savesmall(text, link)
-    a(class="button button--small button--save" href=link) #{text}
-
     a(class="button button--small button--remove" href=link)&attributes(attributes) #{text}
 
 mixin button(text, link, mode, size)
-    a(href=link class="button button--" + mode + " button--" + size)&attributes(attributes) #{text}
-
+    if mode && size
+        a(href=link class="button button--" + mode + " button--" + size)&attributes(attributes) #{text}
+    else if mode
+        a(href=link class="button button--" + mode)&attributes(attributes) #{text}
+    else
+        a(href=link class="button")&attributes(attributes) #{text}
