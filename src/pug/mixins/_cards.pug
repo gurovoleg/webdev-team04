@@ -1,22 +1,17 @@
-mixin card(imgSrc, text, link)
-
-	.card
+mixin card-post(imgSrc, text, link)
+	.card.card--post&attributes(attributes)
 		.card__img
-			img(src="../img/blog/"+ imgSrc alt="img")
-		.card__body
-			.card__body-text
-				p
+			img(src="../img/blog/"+imgSrc alt="img")
+		.card__desc
+			.card__title
 				| #{text}
+			+button('Читать', link)
 
-			+button('Читать', '#')
-
-mixin card--portfolio(imgSrc, text, link)
-	.card.card--portfolio
+mixin card-portfolio(imgSrc, text, link)
+	.card.card--portfolio&attributes(attributes)
 		.card__img
-			img(src="../img/blog/portfolio-preview.jpg" alt="img")
-		.card__body
-			.card__body-text
-				p
+			img(src="../img/blog/"+imgSrc alt="img")
+		.card__desc.pl-20.pr-20
+			.card__title
 				| #{text}
-
-			+button('Смотреть кейс', '#')
+			+button('Смотреть кейс', link)
