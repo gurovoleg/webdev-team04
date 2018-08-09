@@ -31,9 +31,9 @@ mixin formInput(id, method, action, labelText, text)
 mixin commentAdd(name,placeholder)
 	textarea.textarea.textarea--comment-add(name=name, placeholder=placeholder)
 
-mixin editTechInput(text, id, name, labeltext)
+mixin editTechInput(text, type, name, labeltext)
 	p.edit-tech-text
 		b #{text}
-	input.edit-tech-input(id=id, type="text", name=name, placeholder="0")
+	input.input.edit-tech-input(name=name, type, placeholder="0")
 	label.edit-tech-label #{labeltext}
 
