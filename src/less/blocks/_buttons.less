@@ -9,14 +9,13 @@
 	border-style: solid;
 	border-radius: 22px;
 
-	height: 2.75em;
-
-	padding-top: 0.68em;
+	padding-bottom: 0.9em;
+	padding-top: 0.7em;
 	padding-left: 1.25em;
 	padding-right: 1.25em;
 
 	color: #037EC6;
-	background: #FFF;
+	background-color: #FFF;
 	cursor: pointer;
 	text-decoration: none;
 	font-weight: 700;
@@ -42,10 +41,9 @@
 }
 
 .button--edit {
-	.button;
 	border-color: #FFBA00;
 	color: #FFF;
-	background: #FFBA00;
+	background-color: #FFBA00;
 
 	&:hover,
 	&:focus {
@@ -60,10 +58,9 @@
 }
 
 .button--remove {
-	.button;
 	border-color: #b51919;
 	color: #FFF;
-	background: #b51919;
+	background-color: #b51919;
 
 	&:hover,
 	&:focus {
@@ -72,16 +69,15 @@
 	}
 
 	&:active {
-		border-color: #990101F2;
-		background-color: #990101F2;
+		border-color: #990101;
+		background-color: #990101;
 	}
 }
 
 .button--save {
-	.button;
 	border-color: #037ec6;
 	color: #FFF;
-	background: #037ec6;
+	background-color: #037ec6;
 
 	&:hover,
 	&:focus {
@@ -96,11 +92,10 @@
 }
 
 .button--enter {
-	.button;
 	.transition;
 	border-color: #fff;
 	color: #037ec6;
-	background: #fff;
+	background-color: #fff;
 	box-shadow: 0px 6px 16px 1px rgba(0, 0, 0, 0.75);
 
 	&:hover,
@@ -118,33 +113,33 @@
 }
 
 .button--profile {
-	.button;
-	border-color: #bfbfbf;
+	border: none;
 	color: #FFF;
-	background: #bfbfbf;
+	background-color: rgba(34, 34, 34, 0.25);
 
-	height: 2em;
-	padding-top: 0.25em;
+	background: rgba(34, 34, 34, 0.25);
+
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	height: 26px;
+	
 
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 13px;
 
 	&:hover,
 	&:focus {
-		border-color: #999;
-		background-color: #999;
+		background-color: rgba(34, 34, 34, 0.34);
 	}
 
 	&:active {
-		border-color: #666;
-		background-color: #666;
+		background-color: rgba(34, 34, 34, 0.60);
 	}
 }
 
 .button--small {
-	.button;
-	height: 2.3em;
-	padding-top: 0.4em;
+	padding-bottom: 0.8em;
+	padding-top: 0.45em;
 	font-size: 14px;
 }
 
@@ -172,4 +167,6 @@
 // For page-add-projects.html
 .project-button .button--save {
 	margin-right: 20px;
+}
+	height: 32px;
 }
