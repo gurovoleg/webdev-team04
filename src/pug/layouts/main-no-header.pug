@@ -8,10 +8,13 @@ html(lang="ru")
 		include ./_head-part.pug
 		
 	body(class=pageClass)
+		.wrapper
 
-		include ../sections/header-admin.pug
+			include ../sections/header-admin.pug
+
+			.content
 		
-		block content
+				block content
 
-		include ../sections/footer.pug
-		include ./_footer-part.pug
+			include ../sections/footer.pug
+			include ./_footer-part.pug
