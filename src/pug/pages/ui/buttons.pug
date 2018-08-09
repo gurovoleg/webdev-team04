@@ -59,6 +59,29 @@ block content
 
 			pre.
 				+button-remove('Удалить', '#')(class='ml-0')
+
+			h2.mb-20 Универcальный миксин
+			+button('Обычная', '#')
+			pre.
+				+button('Обычная', '#')
+
+			+button('Малого размера', '#', 'small')
+			pre.
+				+button('Малого размера', '#', 'small')
+
+			+button('Редактировать', '#', 'edit')
+			+button('Удалить', '#', 'remove')
+			+button('Сохранить', '#', 'save')
+			+button('Войти', '#', 'enter')
+			pre.
+				+button('Редактировать', '#', 'edit')
+				+button('Удалить', '#', 'remove')
+				+button('Сохранить', '#', 'save')
+				+button('Войти', '#', 'enter')
+			
+			+button('Удалить + малого размера', '#', 'save', 'small')
+			pre.
+				+button('Сохранить + малого размера', '#', 'save', 'small')
 				
 
 
