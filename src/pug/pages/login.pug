@@ -9,34 +9,31 @@ block content
 	.header-top.pl-50.pt-45.pb-100.header-top-bg
 		+logo('Супер сайт')
 		div.header-registration.pr-50
-			+link('Вход', '#').header-registration__link
+			+link('Регистрация', 'registration.html').header-registration__link
 	.container
 		.row
-			.login-form__background.col-lg-4
-			.login-form
-				.user-content
-					h1.text-center Регистрация
+			.login-form__background--registration.col-lg-4
+				.login-form
+					h1.text-center.login-heading Вход на сайт
 					fieldset
 						form
-							+notification('Данный email уже занят', 'error')
-								p Используйте другой email чтобы создать новый аккаунт.
-								p 
-									| Или воспользуйтесь 
-									a(href="#!") восстановлением пароля 
-									|, чтобы войти на сайт.
-							+input('email','email', 'Email')
-							+input('password','password', 'Пароль')
-							.text-center
+							+notification('Введите email', 'error')
+							+inputFormRegistration('email','email', 'Email')
+							+inputFormRegistration('password','password', 'Пароль')
+							.pt-10.checkbox-color
+								+checkbox('mark', 'Запомни меня')
+								+link('Забыли пароль', '#').header-registration__link.ml-0
+							.text-center.pt-30
 								+button-enter('Регистрация', '#')
 
-		.container
-			.row
-				.footer__item.footer__copyright.col-lg-5.footer__align-center
-					p.text-center © Юрий Ключевский #[br]
-					p.text-center
-						| Создано с 
-						//- i.fas.fa-heart.animated.pulse.infinite
-						i.fas.fa-heart.animation-pulse
-						| в 
-						a(href='http://webcademy.ru' target='_blank') #[span WebCademy.ru] 
-						| в 2018 году
+	.container
+		.row
+			.footer__item.footer__copyright.col-lg-5.footer__align-center
+				p.text-center © Юрий Ключевский #[br]
+				p.text-center
+					| Создано с 
+					//- i.fas.fa-heart.animated.pulse.infinite
+					i.fas.fa-heart.animation-pulse
+					| в 
+					a(href='http://webcademy.ru' target='_blank') #[span WebCademy.ru] 
+					| в 2018 году
