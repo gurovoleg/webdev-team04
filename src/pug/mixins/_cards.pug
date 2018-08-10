@@ -4,7 +4,6 @@ mixin card-post(imgSrc, text, link)
 			img(src="../img/blog/"+imgSrc alt="img")
 		.card__desc
 			.card__title
-				h2 
 				| #{text}
 			+button('Читать', link)
 
@@ -14,6 +13,5 @@ mixin card-portfolio(imgSrc, text, link)
 			img(src="../img/blog/"+imgSrc alt="img")
 		.card__desc.pl-20.pr-20
 			.card__title
-				h2
 				| #{text}
 			+button('Смотреть кейс', link)
