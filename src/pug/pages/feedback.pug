@@ -1,16 +1,14 @@
-extends ../../layouts/ui-layout.pug
+extends ../layouts/main.pug
 
 block variables
-	- var title = 'Сообщение от пользователя - UI-kit и HTML фреймворк - Документация';
-	- var pageClass = 'body--dashboard';
+	- var title = 'Контакты';
+	- var pageClass = 'content-page';
 
 block content
-	include ../../sections/ui-nav-inside-ui.pug
-
-	.main-wrapper
-		.container.container--left
-			.title.mb-0 Сообщение от пользователя 
-			.section-ui
+	.container.user-content.section-page.feedback-page
+		.row
+			.col-md-10.offset-md-1
+				.title-1.mt-0 Сообщения от посетителей
 				.user-message
 					.user-message__top
 						.user-message__date 22 Августа 2017
@@ -24,9 +22,8 @@ block content
 					.user-message__bottom
 						.user-message__attachments Прикрепленные файлы: 
 						+link('Avrora-platform.pdf', '#').user-message__attachments-name
-				br
-				br
-				pre.
+
+				.user-message
 					.user-message__top
 						.user-message__date 22 Августа 2017
 						+button-removesmall('Удалить', '#')
