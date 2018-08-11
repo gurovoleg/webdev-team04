@@ -1,0 +1,101 @@
+.login-page {
+  background-image: url('../img/bg/Background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.logo {
+  color: @white;
+}
+
+.checkbox-color {
+  color: @white;
+}
+
+.form-checkbox-and-link {
+  width: 100%;
+}
+
+.login-heading {
+  color: @white;
+  font-size: 28px;
+  font-weight: 900;
+  padding-top: 42px;
+  padding-bottom: 35px;
+}
+
+.login-form__background--registration {
+  height: 435px;
+  border-radius: 7px;
+    background-color: rgba(18, 45, 61, 0.47);
+    box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.004);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login-form__background {
+  border-radius: 7px;
+    background-color: rgba(18, 45, 61, 0.47);
+    box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.004);
+    height: 574px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login-form {
+  width: 350px;
+  height: 470px;
+  border: none;
+  z-index: 4;
+  
+  fieldset{
+    border: none;
+  }
+}
+
+.input-form-registration {
+  height: 42px;
+  width: 100%;
+  padding: 10px;  
+  border: 1px solid @border-color;
+  border-radius: @form-border-radius;
+  transition: @transition-form;
+  margin-top: 20px;
+    &:active, &:hover, &:focus {
+      border: 1px solid @border-color-active;
+      box-shadow: @form-box-shadow;
+          }   
+}
+
+.login-page-content {
+  flex: 1;
+}
+
+.footer__align-center {
+  margin-left: auto;
+  margin-right: auto;
+  color: @white;
+
+  a {
+    .transition;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    &:hover, &:focus {
+      color: #ffe400;
+      text-decoration: none;
+    }
+    &:active {
+        color: #ffe400;
+        outline-style: none;
+      }
+  }
+  .fa-heart>path {
+    fill: #d10946;
+  }
+
+}          
