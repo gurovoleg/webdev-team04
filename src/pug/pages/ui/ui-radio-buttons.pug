@@ -1,8 +1,8 @@
 
 extends ../../layouts/ui-layout.pug
 block variables
-	- var title = 'Формы - UI-kit и HTML фреймворк - Документация'
-	- var pageClass = 'body--dashboard'
+	- var title = 'Формы - UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
 include ../../mixins/radio-buttons.pug
 
 block content
@@ -10,11 +10,15 @@ block content
 
 	.main-wrapper
 		.container.container--left
-			.section-ui
-				.title Элементы формы
+			.title Элементы формы
+			
+			p 
+				strong Радиокнопки
 				form.form#loginForm
 					fieldset
 						+radio-buttons("radio-group-1", "znachenie-1", "Option-1")
 						+radio-buttons("radio-group-1", "znachenie-2", "Option-2")
 						+radio-buttons("radio-group-1", "znachenie-3", "Option-3")
-						
+			
+			pre.
+				+radio-buttons("radio-group-1", "znachenie-1", "Option-1")
