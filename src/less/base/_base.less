@@ -10,6 +10,7 @@ html, body {
 	padding: 0;
 	margin: 0;
 	min-height: 100%;
+    position: relative;
 }
 
 /* fix for top margin collapsing and vertical scroll prevent for body tag, when body height = 100% */
@@ -17,7 +18,7 @@ body::before {
 	content: "";
 	display: block;
 	width: 1px;
-	height: 1px;
+	height: 0px;
 	background-color: transparent;
 }
 
@@ -36,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
 	display: block;
+    max-width: 100%;
 }
 
 a {
@@ -122,6 +124,11 @@ blockquote p {
 	margin-top: 0;
 }
 
+.section-page {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
 .hr-line {
 	border-bottom: 1px solid #e9eff3;
 }
@@ -131,8 +138,19 @@ body {
 	min-width: 1200px;
 }
 
+/* // Remove mobile support */
 .container {
 	width: 1140px;
 	min-width: 1140px;
 }
-/* // Remove mobile support */
+
+
+/***style for sticky-footer***/
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+}

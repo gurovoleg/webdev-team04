@@ -1,19 +1,21 @@
+@import "../base/_variables";
+
 .user-content {
 
-	h1 { font-size: 28px; font-weight: 900; margin: 1em 0 1em; }
-	h2 { font-size: 26px; font-weight: 600; margin: 1em 0 1em; }
-	h3 { font-size: 24px; font-weight: 900; margin: 1em 0 1em; }
-	h4 { font-size: 20px; font-weight: 900; margin: 1em 0 1em; }
-	h5 { font-size: 18px; font-weight: 900; margin: 1em 0 1em; }
-	h6 { font-size: 16px; font-weight: 900; margin: 1em 0 1em; }
-
-	a {
-		color: #037ec6;
-	}
+	h1 { font-size: 28px; font-weight: 900; margin: 1em 0 1em; color: @title;}
+	h2 { font-size: 26px; font-weight: 600; margin: 1em 0 1em; color: @text;}
+	h3 { font-size: 24px; font-weight: 900; margin: 1em 0 1em; color: @title;}
+	h4 { font-size: 20px; font-weight: 900; margin: 1em 0 1em; color: @title;}
+	h5 { font-size: 18px; font-weight: 900; margin: 1em 0 1em; color: @title;}
+	h6 { font-size: 16px; font-weight: 900; margin: 1em 0 1em; }color: @title;
 
 	p {
+		color: @text;
 		line-height: 2em;
 		margin-bottom: 0.9em;
+		a {
+			color: @active;
+		}
 	}
 
 	hr {
@@ -36,10 +38,10 @@
 			display: block;
 			position: absolute;
 			left: -20px;
-			top: 12px;
+			top: 10px;
 			width: 6px;
 			height: 6px;
-			background-color: #037ec6;
+			background-color: @active;
 		}//&:before
 
 	}// li
@@ -47,6 +49,11 @@
 	&>h1, &>h2, &>h3, &>h4, &>h5, &>h6, 
 	&>.title-1, &>.title-2, &>.title-3, &>.title-4, &>.title-5, &>.title-6, &>.title {
 		margin-top: 0;
+	}
+	// custom for comment-add.html
+	h6.comment-add-block__right-title {
+		margin-top: 0;
+		margin-bottom: 10px;
 	}
 	
 }// .user-content
