@@ -1,8 +1,9 @@
-extends ../../layouts/ui-layout.pug
 
+extends ../../layouts/ui-layout.pug
 block variables
 	- var title = 'Формы - UI-kit и HTML фреймворк - Документация'
 	- var pageClass = 'body--dashboard'
+include ../../mixins/radio-buttons.pug
 
 block content
 	include ../../sections/ui-nav-inside-ui.pug
@@ -11,17 +12,9 @@ block content
 		.container.container--left
 			.section-ui
 				.title Элементы формы
-
 				form.form#loginForm
 					fieldset
-						label(class="form__label-radio" for="options-1")
-							input(class="form__input-radio" type="radio" name="radio-group" value="type-1" id="options-1")
-							span.form__radio
-							| Option 1
+						+radio-buttons("radio-group-1", "znachenie-1", "Option-1")
+						+radio-buttons("radio-group-1", "znachenie-2", "Option-2")
+						+radio-buttons("radio-group-1", "znachenie-3", "Option-3")
 						
-						
-						
-						label(class="form__label-radio" for="options-2")
-							input(class="form__input-radio" type="radio" name="radio-group" value="type-2" id="options-2")
-							span.form__radio
-							| Option 2
