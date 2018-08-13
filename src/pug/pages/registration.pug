@@ -10,25 +10,22 @@ block content
 			+logo('Супер сайт')
 			div.header-registration.pr-50
 				+link('Вход', 'login.html').header-registration__link
-		.login-page-content
-			.container
-				.row
-					.login-form__background.col-lg-4
-						.login-form
-							h1.text-center.login-heading Регистрация
-							form
-								+notification('Данный email уже занят', 'error')
-									p Используйте другой email чтобы создать новый аккаунт.
-									p 
-										| Или воспользуйтесь 
-										a(href="#!") восстановлением пароля 
-										|, чтобы войти на сайт.
-								+inputFormRegistration('email','email', 'Email')
-								+inputFormRegistration('password','password', 'Пароль')
-								.text-center.pt-30
-									+button-enter('Регистрация', '#')
-		.container
-			.row
+		.login-page-conteiner
+			.login-form__background
+				.login-form
+					h1.text-center.login-heading Регистрация
+					form
+						+notification('Данный email уже занят', 'error')
+							p Используйте другой email чтобы создать новый аккаунт.
+							p 
+								| Или воспользуйтесь 
+								a(href="#!") восстановлением пароля 
+								|, чтобы войти на сайт.
+						+inputFormRegistration('email','email', 'Email')
+						+inputFormRegistration('password','password', 'Пароль')
+						.text-center.pt-30
+							+button-enter('Регистрация', '#')
+		.login-page-footer
 				.footer__item.footer__copyright.col-lg-5.footer__align-center
 					p.text-center © Юрий Ключевский #[br]
 					p.text-center
