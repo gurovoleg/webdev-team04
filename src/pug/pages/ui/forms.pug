@@ -26,6 +26,17 @@ block content
 				pre.
 					+checkbox('mark', 'Запомни меня','checked')
 
+			p 
+				strong Радиокнопки
+				form.form#loginForm
+					fieldset
+						+radio-buttons("radio-group-1", "znachenie-1", "Option-1")
+						+radio-buttons("radio-group-1", "znachenie-2", "Option-2")
+						+radio-buttons("radio-group-1", "znachenie-3", "Option-3")
+			
+			pre.
+				+radio-buttons("radio-group-1", "znachenie-1", "Option-1")
+
 
 			.section-ui
 				+input('firstname','text', 'Введите имя','Поле для ввода')
@@ -33,25 +44,16 @@ block content
 					+input('firstname','text', 'Введите имя','Поле для ввода')
 			
 			.section-ui
-				p
-					em.
-						Форма для текстового сообщения 
 				+textArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
 				pre.
 					+textArea('message', 'type', 'Введите сообщение',' Сообщение - Textarea') 
 
-			.section-ui
-				p
-					em.
-						Элементы формы Загрузка фотографии
-
 			.section-ui 
-				p.label.
-					Фотографии
-				p.
-					Изображение jpg или png, размером больше чем 100х100 пикселей, и весом до 2Мб.
+				p.label Изображение
+				p Изображение jpg или png, размером больше чем 100х100 пикселей, и весом до 2Мб.
 				
 				+inputFileUpload('Выбрать файл', 'Файл не выбран')
+			
 			pre.
 				+inputFileUpload('Выбрать файл', 'Файл не выбран')
 			
