@@ -1,8 +1,35 @@
 extends ../layouts/login.pug
 
 block variables
-	- var title = 'Вход на сайт'
-	- var pageClass = 'login-page'
+	- var title = 'Вход на сайт';
+	- var pageClass = 'login-page';
 
 block content
-		h1 Заготовка для страницы входа
+	.login-page
+		.header-top.pl-50.pt-45.mb-0
+			+logo('Супер сайт')
+			div.header-registration.pr-50
+				+link('Регистрация', 'registration.html').header-registration__link
+		.login-page-conteiner
+			.login-form__background--registration
+				.login-form.p-10
+					h1.text-center.login-heading Вход на сайт
+					form
+						+notification('Введите email', 'error')
+						+inputFormRegistration('email','email', 'Email')
+						+inputFormRegistration('password','password', 'Пароль')
+						.pt-20.checkbox-color.mr-0
+							+checkbox('mark', 'Запомнить меня')
+							+link('Забыл пароль', '#').header-registration__link
+						.text-center.pt-30
+							+button-enter('Войти', '#')(class="pl-50 pr-50")
+		.login-page-footer
+			.footer__item.footer__copyright
+				p.text-center © Юрий Ключевский #[br]
+				p.text-center
+					| Создано с
+					//- i.fas.fa-heart.animated.pulse.infinite
+					i.fas.fa-heart.animation-pulse
+					| в 
+					a(href='http://webcademy.ru' target='_blank') #[span WebCademy.ru] 
+					| в 2018 году
