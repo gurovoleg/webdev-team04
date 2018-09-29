@@ -5,7 +5,7 @@
 
 1. Клонирование проекта к себе на ПК               
 ```sh
-git clone github.com/gurovoleg/webdev-team04.git
+git clone https://github.com/gurovoleg/webdev-team04.git
 ```
 
 2. Переходим в созданную папку
